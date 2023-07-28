@@ -1,0 +1,216 @@
+{
+    "key": "group_58245454a89ca",
+    "title": "Event Details",
+    "fields": [
+        {
+            "key": "field_6130d4e04db22",
+            "label": "Date",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5824547123e9b",
+            "label": "Start date",
+            "name": "event_start_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "Select the start day and time.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6130d4f94db23",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "j M Y H:i",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_5824556823e9c",
+            "label": "End date",
+            "name": "event_end_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "Select the end day and time – leave blank for one day event.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824547123e9b",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "j M Y H:i",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_582474f8edc4f",
+            "label": "Expiry date",
+            "name": "event_expiry_date",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "Select when the event should come off the website.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6130d4f94db23",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "j M Y H:i",
+            "return_format": "Y-m-d H:i:s",
+            "first_day": 1
+        },
+        {
+            "key": "field_6130d5444db24",
+            "label": "Location",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6130d5524db25",
+            "label": "Virtual Event",
+            "name": "event_is_virtual",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Enable if the event is virtual.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5b4dc6d00acaa",
+            "label": "Display location",
+            "name": "event_display_location",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Enter a short display location.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "ie. ExCeL London, London, UK",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58336dd0dfe18",
+            "label": "Location",
+            "name": "event_location",
+            "aria-label": "",
+            "type": "google_map",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "center_lat": "51.433255",
+            "center_lng": "0.221591",
+            "zoom": "",
+            "height": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1678898896
+}

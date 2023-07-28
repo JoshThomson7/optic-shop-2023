@@ -1,0 +1,84 @@
+/*
+*	FC Tab Scrollbar
+*
+*	Custom overrides and additions
+*	for this specific site
+*
+*	@package Flexible Content
+*	@version 1.0
+*/
+
+.fc_tab_scrollbar {
+    position: relative;
+    @include breakpoint(cousinbear) {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        border-top: 1px rgba(white, 0.2) solid;
+        border-bottom: 1px rgba(white, 0.2) solid;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        li {
+            text-align: center;
+            flex: 1;
+            a {
+                display: block;
+                position: relative;
+                padding: 16px 8px;
+                font-size: 14px;
+                color: var(--fl1-white);
+                font-weight: 600;
+                text-transform: uppercase;
+                &.active,
+                &:hover {
+                    background: rgba(white, 0.2);
+                }
+            }
+
+            &:last-of-type {
+                a {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    &.solid {
+        .max__width {
+            background: var(--fl1-white);
+            border-radius: 16px;
+
+            ul {
+                border: none;
+                li {
+                    a {
+                        color: var(--fl1-text);
+
+                        &:before { 
+                            opacity: 0.1;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            content: '';
+                            top: 0;
+                            left: 0;
+                        }
+
+                        &.active {
+                            color: var(--fl1-primary);
+                            &:before { 
+                                background: var(--fl1-primary);
+                            }
+                        }
+                        &:hover {
+                            color: var(--fl1-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

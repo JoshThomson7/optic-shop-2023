@@ -1,0 +1,86 @@
+/*
+	Custom Login
+	Description: Style the WordPress Login page
+*/
+
+@import 'inc/vars';
+@import 'inc/mixins';
+@import 'inc/fonts';
+
+html {
+
+	body.login {
+        outline: none;
+        font-family: $primaryFont;
+        min-height:600px;
+        display: flex;
+        box-sizing: border-box;
+        background: #1B1B1E;
+    }
+
+	.login {
+
+		/* Logo */
+		h1 { padding: 0 0 20px;
+			a { background:url(img/brownbills-logo.png) no-repeat scroll 0 0 transparent; background-size: 200px auto; display:block; margin:0 auto; width: 200px; padding:0; height: 85px;}
+		}
+
+		/* Error Message */
+
+		#login_error { margin:0 20px 20px !important; background: tomato !important; color:#fff; box-shadow:none!important; border: none;
+			a { color:#fff;}
+		}
+
+		/* Other message */
+		p {
+			&.message { margin:0 20px 20px; background: #86d81b !important; color:#fff; box-shadow:none!important; border: none;}
+		}
+
+		#nav { color: var(--fl1-text) !important; float:right; margin:0; padding:0 20px 20px 0; opacity:0.7;
+			a { color: var(--fl1-text) !important; text-decoration:none !important;
+				&:hover { color: var(--fl1-text) !important; text-decoration:underline !important;}
+			}
+		}
+
+		#login { margin: auto; background: #fff; padding:0; width: 100%; max-width: 450px !important; overflow:hidden; padding: 40px 40px 60px; box-shadow: 0 0 10px rgba(black, 0.1);}
+
+		#backtoblog { float:left; margin:0; padding:0 0 20px 20px; opacity:0.7;
+			a { color: var(--fl1-text) !important; text-decoration:none;
+				&:hover { color: var(--fl1-text) !important; text-decoration:underline;}
+			}
+		}
+
+		form { background:none; padding:0 24px 26px; margin-top:0; -webkit-box-shadow:none; box-shadow:none; border: none;
+			label { font-size: 16px; color: var(--fl1-text); position:relative; content:""; display: block; font-weight: 600;}
+
+			input[type="text"],
+			input[type="password"] { background: var(--fl1-lightgrey); border:none; -webkit-box-shadow:none; box-shadow:none; color: var(--fl1-text); padding: 15px 10px; margin-top: 5px; font-size: 16px; border-radius: 0;}
+
+			label[for="user_login"]:before { content:"\f110"; font-family:dashicons; font-size:20px; position:relative; top:4px; margin-right:7px; color: var(--fl1-text);}
+			label[for="user_pass"]:before { content:"\f160"; font-family:dashicons; font-size:20px; position:relative; top:4px; margin-right:7px; color: var(--fl1-text);}
+
+            p.submit { display: flex; justify-content: flex-end;
+                #wp-submit { padding: 14px 45px 11px; font-size: 15px; text-transform: uppercase; font-weight: 600; font-family: $primaryFont; background: var(--fl1-secondary); color: #fff; border: none; transition: all .3s ease; border-radius: 0;
+                    &:hover { background: lighten($primary, 5%); transition: all .3s ease;}
+                }
+            
+			}
+			.magic-login-normal-login,
+			.continue-with-magic-login { width: 100% !important;}
+
+			.magic-login-normal-login,
+			.continue-with-magic-login {
+				button { padding: 14px 45px 11px; font-size: 15px; text-transform: uppercase; font-weight: 600; font-family: $primaryFont; background: var(--fl1-secondary) !important; color: #fff; border: none !important; transition: all .3s ease;
+						&:hover { background: lighten($primary, 5%); transition: all .3s ease;}				
+				}
+			}
+        }
+        
+        .button.wp-hide-pw .dashicons { top: 14px; color: var(--fl1-primary);}
+	}
+
+    .forgetmenot { padding-top: 17px; display: flex; align-self: center;
+        input { margin: 3px 0 0 0;}
+		label { font-size:15px !important; color:var(--fl1-text); display:flex; margin-left: 5px; line-height: normal;}
+	}
+}

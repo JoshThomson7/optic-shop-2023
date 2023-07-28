@@ -1,0 +1,131 @@
+/// Event details
+
+.fc_event_details {
+
+	.event-details {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		@include breakpoint(brotherbear) {
+			flex-direction: column-reverse;
+		}
+
+		article { 
+			width: 60%;
+			padding-right: 64px;
+			@import '../inc/fc-general-text';
+
+			@include breakpoint(brotherbear) {
+				width: 100%;
+				padding-right: 0;
+			}
+		}
+
+		aside { 
+			width: 40%;
+			position: sticky;
+			top: 16px;
+			min-width: 320px;
+
+			@include breakpoint(brotherbear) {
+				width: 100%;
+				margin-bottom: 24px;
+				position: static;
+				top: 0;
+			}
+	
+			.event-padder {
+				padding: 32px;
+				margin: 10px;
+				transition: all 0.3s ease;
+				transform: scale3d(1, 1, 1);
+				flex: 1;
+				border-radius: 32px;
+				box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+				background: #fff;
+			}
+
+			.event-header {
+				display: flex;
+				justify-content: center;
+				padding-bottom: 32px;
+				border-bottom: 1px solid var(--fl1-border);
+				margin-bottom: 12px;
+			}
+
+			.event-info { 
+				display: flex;
+				padding: 12px 0;
+
+				span { 
+					display: block;
+					color: var(--fl1-primary);
+					font-weight: 600;
+					width: 120px;
+					line-height: 24px;
+				}
+
+				p { 
+					flex: 1;
+					color: var(--fl1-text-light);
+					font-weight: 400;
+					padding-left: 16px;
+					line-height: 24px;
+
+					strong { 
+						font-weight: 600;
+					}
+				}
+			}
+	
+			.event-date {
+				margin-right: 24px;
+				min-width: 80px;
+	
+				&-my {
+					box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+					border-radius: 12px 12px 0 0;
+					background: var(--fl1-primary);
+					text-align: center;
+					color: var(--fl1-white);
+					font-size: 12px;
+					font-weight: 600;
+					padding: 8px;
+					text-transform: uppercase;
+				}
+	
+				&-d {
+					box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
+					border-radius: 0 0 12px 12px;
+					background: var(--fl1-white);
+					color: var(--fl1-text);
+					text-align: center;
+					font-size: 24px;
+					font-weight: 600;
+					padding: 8px;
+				}
+			}
+
+			.event-footer {
+				padding-top: 32px;
+				border-top: 1px solid var(--fl1-border);
+				margin-top: 12px;
+
+				p { 
+					font-size: 16px;
+					color: var(--fl1-text);
+					text-align: center;
+					margin-bottom: 16px;
+					padding: 16px;
+					border-radius: 8px;
+					background: #d9f1ff;
+				}
+
+				&-actions { 
+					a { margin-bottom: 16px;}
+				}
+			}
+		}
+	}
+}

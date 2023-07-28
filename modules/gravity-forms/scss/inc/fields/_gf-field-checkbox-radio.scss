@@ -1,0 +1,44 @@
+/**
+* GF Checkboxes and Radio buttons
+*/
+
+
+.gfield_radio,
+.gfield_checkbox {
+	.gchoice {
+		@include breakpoint(papabear) { width: 50%; margin-right: 0;}
+		@include breakpoint(teenbear) { width: 100%;}
+
+		label { 
+			padding: 5px 10px 5px 5px;
+			border-radius: 50px;
+			&:hover { background: darken($lightgrey, 2%);}
+
+			.ginput_price { padding-left: 15%; margin-left: auto; font-weight: 600;}
+		}
+
+		@include pretty-checkradio("label", "\f111", "\f058");
+		input[type="checkbox"]:checked + label { background: darken($lightgrey, 2%);}
+	}
+}
+
+&.gf-speakers { 
+	.ginput_container_checkbox { 
+		height: 240px;
+		overflow-y: auto;
+		background: #fff;
+		padding: 16px;
+		border-radius: 16px;
+	}
+}
+
+&.gf__radio__check__equal {
+	.gfield_radio,
+	.gfield_checkbox {
+		display: flex;
+		flex-wrap: wrap;
+		.gchoice { width: 50%; margin-right: 0;
+			@include breakpoint(teenbear) { width: 100%;}
+		}
+	}
+}

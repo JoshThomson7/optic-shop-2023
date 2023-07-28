@@ -1,0 +1,82 @@
+///
+/// Flexible Content
+/// 
+
+@import 'fc-tab-scrollbar';
+
+body.fc-overlap {
+	.fc-layout:first-child {
+		padding-top: var(--fl1-spacing-sm);
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 108px;
+			background: var(--fl1-primary);
+			z-index: 0;
+		}
+
+		.fc-layout-container { 
+			background: none;
+		}
+	}
+
+	section.avb {
+		.avb-banners {
+			.avb-banner {
+				&:after { 
+					background: var(--fl1-primary);
+				}
+			}
+		}
+	}
+}
+
+.flexible__content { position: relative; z-index: 5;
+
+    @import 'fc-global';
+
+    @import 'layouts/fc-accordion';
+    @import 'layouts/fc-banks';
+    @import 'layouts/fc-buttons';
+    @import 'layouts/fc-call-to-action';
+    @import 'layouts/fc-carousel';
+    @import 'layouts/fc-contact';
+    @import 'layouts/fc-feature';
+    @import 'layouts/fc-feature-boxes';
+    @import 'layouts/fc-feature-tabs';
+    @import 'layouts/fc-free-text';
+    @import 'layouts/fc-gallery';
+    @import 'layouts/fc-grid-boxes';
+    @import 'layouts/fc-grid-links';
+    @import 'layouts/fc-icon-grid';
+    @import 'layouts/fc-logo-cloud';
+    @import 'layouts/fc-masonry';
+    @import 'layouts/fc-news-downloads';
+    @import 'layouts/fc-resources';
+    @import 'layouts/fc-stats';
+    @import 'layouts/fc-steps';
+    @import 'layouts/fc-table';
+    @import 'layouts/fc-tabs';
+    @import 'layouts/fc-team';
+    @import 'layouts/fc-team-popup';
+    @import 'layouts/fc-testimonials';
+    @import 'layouts/fc-timeline';
+    @import 'layouts/fc-video';
+    
+}
+
+@import 'layouts/fc-news';
+
+#slider { background: $border; border-radius: 25px; font-size: normal; border: none; height: 7px; width: 80%; flex: 1 0 auto; position: relative;
+	@include breakpoint(papabear) { width: 100%; margin: 40px 0;}
+	
+	.ui-slider-handle { background: $secondary; box-shadow: 0px 1px 4px rgba(0,0,0,0.4); cursor: pointer; display: inline-block; width: 12px; height: 35px; position: absolute; border-radius: 2px; transition: scale .1s ease, background .1s ease; transform: scale3d(1,1,1); top: -14px; border: none;
+		small { font-size: 12px; font-weight: 600; position: absolute; left: 50%; transform: translateX(-50%); top: -20px;}
+	}
+
+	.ui-slider-range { background: $primary; border-radius: 25px;}
+}

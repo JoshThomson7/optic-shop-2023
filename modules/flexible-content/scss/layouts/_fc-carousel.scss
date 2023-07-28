@@ -1,0 +1,26 @@
+/// Carousel
+.fc_carousel_images {
+	.carousel_images {
+		
+		.carousel_image {
+			margin: var(--fl1-spacing-xs);
+			figure {
+				display: flex !important;
+				justify-content: center;
+				align-items: center;
+				padding: var(--fl1-spacing-lg);
+				box-shadow: 0 0 10px rgba(0,0,0,0.1);
+				width: 100%;
+
+				a {
+					display: flex;
+					justify-content: center;
+				}
+				img {
+					width: auto;
+					max-height: 4rem;
+				}
+			}
+		}
+	}
+}

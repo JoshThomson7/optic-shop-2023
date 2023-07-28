@@ -1,0 +1,19 @@
+/// No Banner
+&.avb-empty { 
+	background: var(--fl1-primary);
+
+	.avb-banner {
+		&:after { 
+			display: none;
+		}
+
+		.avb-banner__caption {
+			padding: var(--fl1-spacing-xl) 0 var(--fl1-spacing-xl);
+
+			.avb-banner__caption-wrap { 
+				padding: 0;
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+// https://designs.ai/colors/palette/1427
+
+// Fonts
+$primaryFont: 'Quicksand', sans-serif;
+$secondaryFont: 'Quicksand', sans-serif;
+$baseFontSize: 1rem; // 16px
+$baseFontColor: #000;
+
+// Colours
+$primary: #203e5f;
+$primaryLight: #F9ECED;
+$secondary: #eec550;
+$lightgrey: #F3F4F5;
+$text: $baseFontColor;
+$textLight: #435366;
+$border: #D0D5DA;
+$borderDark: lighten($text, 35%);
+$borderRadius: 8px;
+$success: #64c82d;
+$warning: #ffc458;
+$error: tomato;
+$white: #fff;
+
+:root {
+
+    // Colors
+    --fl1-primary: #203e5f;
+    --fl1-secondary: #eec550;
+    --fl1-lightgrey: #F3F4F5;
+    --fl1-text: #5A5072;
+    --fl1-text-light: #b2aebd;
+    --fl1-border: #D0D5DA;
+    --fl1-border-dark: lighten($text, 35%);
+    --fl1-success: #64c82d;
+    --fl1-warning: #ffc458;
+    --fl1-error: tomato;
+    --fl1-white: #fff;
+
+    // Fonts
+    --fl1-primary-font: 'Quicksand', sans-serif;
+    --fl1-secondary-font: 'Quicksand', sans-serif;
+    --fl1-base-font-size: 1rem;	// 16px
+
+	// Font sizes
+	--fl1-font-xxxl: 2.5rem; // 40px
+	--fl1-font-xxl: 2rem;  	 // 32px
+	--fl1-font-xl: 1.75rem;  // 28px
+	--fl1-font-lg: 1.5rem; 	 // 24px
+	--fl1-font-md: 1.25rem;  // 20px
+	--fl1-font-sm: 1.125rem; // 18px
+	--fl1-font-xs: 1rem; 	 // 16px
+	--fl1-font-xxs: 0.875rem; // 14px 
+	
+	// Spacing
+	--fl1-spacing-xxxl: 3rem; 	// 64px
+	--fl1-spacing-xxl: 3rem; 	// 48px
+	--fl1-spacing-xl: 2.5rem; 	// 40px
+	--fl1-spacing-lg: 2rem; 	// 32px
+	--fl1-spacing-md: 1.5rem; 	// 24px
+	--fl1-spacing-sm: 1rem; 	// 16px
+	--fl1-spacing-xs: 0.5rem; 	// 8px
+	
+}

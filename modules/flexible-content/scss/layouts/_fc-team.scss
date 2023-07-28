@@ -1,0 +1,80 @@
+///
+/// Team
+/// 
+
+.fc_team {
+	position: relative;
+
+	.team__wrap {
+		display: flex;
+		flex-wrap: wrap;
+
+		article {
+			flex: 1;
+			min-width: 274px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+
+			.padder {
+				flex: 1;
+				background: var(--fl1-primary);
+				margin: var(--fl1-spacing-sm);
+				padding: var(--fl1-spacing-sm);
+			}
+
+			@include breakpoint(mamabear) {
+				width: math.percentage(math.div(1, 2));
+			}
+
+			a {
+				display: flex;
+				justify-content: center;
+
+				img { 
+					width: auto;
+				}
+
+				&.plus {
+					position: absolute;
+					margin: 0;
+					bottom: -4px;
+					right: -4px;
+					z-index: 1;
+					width: 48px;
+					height: 48px;
+					background: var(--fl1-secondary);
+					display: flex;
+					align-items: center;
+
+					i {
+						color: #fff;
+						font-size: var(--fl1-font-md);
+					}
+				}
+			}
+
+			h5 {
+				padding: 8px 0 0;
+				margin-bottom: 0;
+				font-size: var(--fl1-font-sm);
+				color: #fff;
+				font-weight: 600;
+				span {
+					font-weight: 400;
+					font-size: var(--fl1-font-xxs);
+					display: block;
+				}
+			}
+
+			img {
+				width: 100%;
+			}
+
+			&:hover .team__overlay {
+				opacity: 0.9;
+				transition: opacity 0.5s ease;
+			}
+		}
+	}
+}

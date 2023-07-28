@@ -1,0 +1,80 @@
+///
+/// News + downloads
+/// 
+
+.fc-news-downloads {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--fl1-spacing-md);
+
+	.news,
+	.downloads {
+		flex: 1;
+
+		h3 { 
+			font-size: var(--fl1-font-lg);
+			color: var(--fl1-primary);
+			font-weight: 600;
+			margin-bottom: var(--fl1-spacing-md);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			a { 
+				color: var(--fl1-secondary);
+				display: flex;
+				align-items: center;
+				gap: var(--fl1-spacing-xs);
+				font-size: var(--fl1-font-xs);
+			}
+		}
+
+		article {
+			border-bottom: 1px solid var(--fl1-lightgrey);
+			padding: var(--fl1-spacing-md) 0;
+
+			a { 
+				font-size: var(--fl1-font-sm);
+				color: var(--fl1-primary);
+				display: block;
+
+				small { 
+					font-size: var(--fl1-font-xs);
+					color: var(--fl1-text-light);
+					display: block;
+					margin-top: var(--fl1-spacing-xs);
+				}
+			}
+
+			date { 
+				font-size: var(--fl1-font-xs);
+				color: var(--fl1-text);
+				margin-top: var(--fl1-spacing-xs);
+				display: block;
+			}
+
+			figure { 
+				width: 100px;
+				height: 100px;
+				background: var(--fl1-border);
+			}
+		}
+
+	}
+
+	.news { 
+		article {
+			a { 
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.downloads { 
+		article {
+			display: flex;
+			align-items: center;
+			gap: var(--fl1-spacing-md);
+		}
+	}
+}

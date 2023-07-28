@@ -1,0 +1,111 @@
+///
+/// Feature tabs
+/// 
+.fc_feature_tabs {
+
+    .feature-tabs {
+        background: linear-gradient(125deg, rgb(0, 21, 73) -10%, rgb(71, 32, 84) 68%, rgb(125, 48, 138) 100%);
+        border-radius: 62px;
+        padding: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        figure {
+            width: 40%;
+            padding: 4%;
+            position: relative;
+            transform: translateX(-130px) scale(1.14);
+
+            img { 
+                position: relative;
+                z-index: 2;
+                border-radius: 50%;
+            }
+            
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url('img/avb-circles.svg');
+                background-size: 99%;
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(180deg);
+            }
+        }
+
+        .tabbed-wrapper {
+            width: 60%;
+
+            h3 { 
+                font-size: 32px;
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 32px;
+            }
+
+            ul.tabbed {
+                display: flex;
+                margin: 0 0 32px;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    a {
+                        font-size: 18px;
+                        color: #fff;
+                        font-weight: 400;
+                        padding: 12px 24px;
+                    }
+                    
+                    &.active a {
+                        font-weight: 600;
+                        background: $primary;
+                        border-radius: 40px;
+                    }
+                }
+            }
+            .tab__content {
+                p { 
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        &.center {
+            justify-content: center;
+            text-align: center;
+            
+            .tabbed-wrapper {
+                ul.tabbed { 
+                    justify-content: center;
+                }
+            }
+        }
+
+        &.right { 
+            flex-direction: row-reverse;
+
+            figure {
+                transform: translateX(130px) scale(1.14);
+            }
+        }
+
+        &.no-img {
+            .tabbed-wrapper {
+                width: 100%;
+            }
+        }
+    }
+
+}

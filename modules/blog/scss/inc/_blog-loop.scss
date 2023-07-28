@@ -1,0 +1,116 @@
+/**
+ * Blog Loop
+ *
+ * Styles for the blog loop
+ *
+ * @package Blog
+ * @version 1.0
+*/
+
+.blog__loop { 
+    flex: 1;
+    padding-right: 5%;
+
+    @include breakpoint(mamabear) {
+		width: 100%;
+		padding-right: 0;
+	}
+}
+
+article.blog__article { 
+
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: var(--fl1-border-radius);
+    padding: 0 20px 0 0;
+    @include breakpoint(mamabear) {padding: 0;}
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+    &:last-of-type { border-bottom: none;}
+
+    @include breakpoint(brotherbear) { 
+        flex-direction: column;
+		padding-right: 0;
+    }
+
+    .blog__content {
+        width: 50%;
+        padding: 32px 24px 32px 32px;
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(brotherbear) { 
+            width: 100%;
+            padding: 24px;
+        }
+
+        h5 { font-size: 13px; font-weight: 800; color: $primary; padding:0 0 10px; text-transform: uppercase; letter-spacing: 1px;}
+        
+        h2 { font-size: 28px; text-transform: none; color: $text; position: relative; margin: 0; font-weight: 600; line-height: 1.4;
+            a { color: $text;
+                &:hover { color: $primary;}
+            }
+        }
+
+        p { 
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 30px;
+        }
+
+        date { 
+            color: $text;
+            font-weight: 900;
+            margin: 20px 0;
+            display: block;
+        }
+
+        .blog__more { 
+            margin-top: auto;
+            display: flex;
+            justify-content: flex-start;
+            
+            a {
+                color: #fff;
+                padding: 12px 24px;
+            }
+        }
+    }
+
+    .blog__img { 
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 290px;
+        border-radius: var(--fl1-border-radius) 0 0 var(--fl1-border-radius);
+        box-shadow: 0 0 10px rgba(0,0,0,.1);
+        filter: grayscale(0.3);
+        transition: all .3s ease;
+
+        &:hover { 
+            filter: grayscale(0);
+            transition: all .3s ease;
+        }
+
+        @include breakpoint(brotherbear) { 
+            width: 100%;
+            min-height: 260px;
+			border-radius: var(--fl1-border-radius) var(--fl1-border-radius) 0 0;
+        }
+    }
+
+    &.blog__featured {
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(black, 0.1);
+        border-bottom: none;
+        border-radius: 5px;
+
+        h2 { 
+            font-size: 33px;
+            line-height: 37px;
+        }
+    }
+}

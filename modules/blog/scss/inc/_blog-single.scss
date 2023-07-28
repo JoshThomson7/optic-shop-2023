@@ -1,0 +1,156 @@
+/*
+*	Blog Single
+*
+*	Styles for blog single
+*
+*	@package Blog
+*	@version 1.0
+*/
+
+.blog--header {
+    padding: var(--fl1-spacing-xl) 0;
+    background: var(--fl1-lightgrey);
+
+	.max__width {
+		display: flex;
+    	flex-direction: column;
+		gap: var(--fl1-spacing-sm);
+	}	
+
+	&-nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		nav { 
+			a {
+				font-size: var(--fl1-font-xs);
+				font-weight: 600;
+				color: var(--fl1-text);
+				text-transform: uppercase;
+				line-height: normal;
+				color: var(--fl1-primary);
+				&:hover {
+					color: var(--fl1-secondary);
+				}
+			}
+		}
+
+		.shared-counts-wrap { 
+			margin: 0;
+		}
+	}
+
+	h1 {
+		font-size: var(--fl1-font-xxxl);
+		color: var(--fl1-primary);
+		font-weight: 600;
+		line-height: 1.4;
+		@include breakpoint(brotherbear) {
+			font-size: var(--fl1-font-xxl);
+			line-height: 44px;
+		}
+	}
+
+	date {
+		color: var(--fl1-secondary);
+		font-size: var(--fl1-font-md);
+		font-weight: 500;
+		display: block;
+
+		@include breakpoint(brotherbear) {
+			font-size: var(--fl1-font-xs);
+		}
+	}
+
+	p {
+		font-size: var(--fl1-font-md);
+		line-height: 1.7;
+		@include breakpoint(brotherbear) {
+			font-size: var(--fl1-font-md);
+		}
+	}
+}
+
+.blog--author {
+	padding: var(--fl1-spacing-sm);
+	background: $lightgrey;
+	display: flex;
+	align-items: center;
+	margin-bottom: var(--fl1-spacing-xl);
+
+	@include breakpoint(mamabear) {
+		align-items: flex-start;
+	}
+
+	figure {
+		max-width: 135px;
+		width: 100%;
+
+		@include breakpoint(mamabear) {
+			max-width: 100px;
+		}
+	}
+
+	&-content {
+		flex: 1;
+		padding: 0 32px 0 32px;
+
+		@include breakpoint(mamabear) {
+			padding: 0 20px;
+		}
+
+		h4 {
+			font-size: var(--fl1-font-sm);
+			color: var(--fl1-primary);
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		h6 {
+			font-size: var(--fl1-font-xxs);
+			color: var(--fl1-text);
+			font-weight: 700;
+			margin-bottom: 0;
+
+			@include breakpoint(mamabear) {
+				line-height: 20px;
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+
+		.description {
+			margin-top: 10px;
+		}
+
+		p {
+			font-size: 16px;
+			color: $textLight;
+			margin-bottom: 0;
+			font-weight: 400;
+			line-height: 22px;
+		}
+
+		ul { 
+			margin-top: 10px;
+			li { 
+				font-size: 16px;
+				color: $textLight;
+				display: flex;
+				align-items: center;
+				i { 
+					margin-right: 8px;
+					color: $primary;
+
+					@include breakpoint(mamabear) {
+						display: none;
+					}
+				}
+				a {
+					margin: 0 4px;
+				}
+			}
+		}
+	}
+}

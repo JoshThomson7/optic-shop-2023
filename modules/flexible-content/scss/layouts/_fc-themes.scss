@@ -1,0 +1,102 @@
+/// Themes
+
+.fc_themes {
+    .themes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -10px;
+
+        .theme { 
+            min-width: 300px;
+            display: block;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            &-padder {
+                display: flex;
+                flex-direction: column;
+                background: #fff;
+                border-radius: 16px;
+                box-shadow: 0 1px 8px rgb(0 0 0 / 10%);
+                border: 1px solid rgba($purple, 0.1);
+                position: relative;
+                margin: 10px;
+                font-size: 16px;
+                color: var(--fl1-primary);
+                padding: 24px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-weight: 600;
+                transform: scale(1);
+                transition: transform 0.3s ease-in-out;
+                flex: 1;
+            }
+
+			&.has-img { 
+				.theme-padder {
+					position: relative;
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					min-height: 300px;
+
+					&:before { 
+						transition: all 0.3s ease-in-out;
+						position: absolute;
+						border-radius: 16px;
+						content: '';
+						display: block;
+						width: 100%;
+						height: 100%;
+
+						background: rgba($purple, 0.4);
+					}
+
+					span { 
+						position: relative;
+						z-index: 1;
+						color: #fff;
+					}
+				}
+			}
+
+			&-img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 16px;
+				object-fit: cover;
+				object-position: center;
+				z-index: -1;
+			}
+
+			&-title {
+				margin-bottom: 0;
+			}
+
+			&-desc {
+				margin-top: 0;
+				font-size: 14px;
+				font-weight: 400;
+				color: var(--fl1-secondary);
+			}
+
+            &:hover {
+                .theme-padder {
+                    transform: scale(1.05);
+
+					&:before {
+						transition: all 0.3s ease-in-out;
+						backdrop-filter: blur(8px);
+						background: rgba($purple, 0.7);
+					}
+                }
+            }
+        }
+    }
+}

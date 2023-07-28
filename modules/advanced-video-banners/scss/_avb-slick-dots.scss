@@ -1,0 +1,97 @@
+/// Slick dot navigation
+.slick-dots {
+	width: auto;
+	text-align: center;
+	bottom: var(--fl1-spacing-xxl);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	z-index: 2;
+
+	@include breakpoint(cousinbear) {
+		bottom: 30px;
+	}
+
+	li {
+		vertical-align: top;
+		margin: 0 4px;
+		width: auto;
+		height: auto;
+
+		@include breakpoint(cousinbear) {
+			margin: 0 var(--fl1-spacing-xs);
+		}
+
+		button {
+			width: 15px;
+			height: 15px;
+			border: none;
+			cursor: pointer;
+			background: rgba(white, 0.8);
+			box-shadow: 0 0 0 0 transparent;
+			vertical-align: middle;
+			color: #fff;
+			margin: 0;
+			transition:all .3s ease;
+			opacity: 1;
+			&::before {
+				display: none;
+			}
+			&:focus {
+				outline: none;
+			}
+			&:hover {
+				opacity: 1;
+			}
+
+			@include breakpoint(cousinbear) {
+				width: 13px;
+				height: 13px;
+				opacity: 1;
+				background: $lightgrey;
+			}
+		}
+		&.slick-active {
+			button {
+				background: var(--fl1-secondary);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+&.avb-dots-center { 
+	.slick-dots {
+		left: 50%;
+		transform: translateY(-50%);
+		justify-content: center;
+	}
+}
+
+&.avb-dots-left { 
+	.slick-dots {
+		left: 0;
+		justify-content: flex-start;
+		padding-left: calc((100vw - 1185px)/2);
+
+		@include breakpoint(cousinbear) {
+			all: none;
+			width: 100%;
+			justify-content: center;
+		}
+	}
+}
+
+&.avb-dots-right { 
+	.slick-dots {
+		right: 0; 
+		justify-content: flex-end;
+		padding-right: calc((100vw - 1185px) / 2);
+		
+		@include breakpoint(cousinbear) {
+			all: none;
+			width: 100%;
+			justify-content: center;
+		}
+	}
+}

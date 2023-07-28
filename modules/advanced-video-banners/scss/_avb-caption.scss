@@ -1,0 +1,100 @@
+// Caption
+.avb-banner__caption {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	width: 100%;
+	padding-left: calc((100vw - 1172px) / 2);
+
+	@include breakpoint(grandpabear) {
+		padding-left: var(--fl1-spacing-sm);
+	}
+
+	@include breakpoint(cousinbear) {
+		.max__width {
+			height: 100%;
+		}
+	}
+
+	.avb-banner__caption-wrap {
+		display: flex;
+		flex-direction: column;
+		gap: var(--fl1-spacing-xl);
+		width: 50%;
+		padding: 4% var(--fl1-spacing-xxxl) 6% 0;
+		align-self: center;
+
+		@include breakpoint(grandmabear) {
+			width: 85%;
+		}
+
+		@include breakpoint(mamabear) {
+			width: 100%;
+		}
+
+		figure {
+			img {
+				height: 3.5rem;
+				width: auto;
+
+				@include breakpoint(cousinbear) {
+					height: 65px;
+				}
+			}
+
+			&.small {
+				margin-bottom: 8px;
+				img {
+					height: 35px;
+				}
+			}
+		}
+
+		@include breakpoint(cousinbear) {
+			width: 100%;
+			margin-bottom: 5px;
+		}
+	}
+
+	h1,
+	h2 {
+		font-size: 3.25rem;
+		font-weight: 500;
+		color: $text;
+		line-height: 1.4;
+		&.hidden {
+			text-indent: -9999px;
+			position: absolute;
+		}
+
+		@include breakpoint(grandpabear) {
+			font-size: var(--fl1-font-xxxl);
+			line-height: 1.2;
+		}
+	}
+
+	h3 {
+		font-size: var(--fl1-font-xs);
+		font-weight: 600;
+		color: var(--fl1-secondary);
+		text-transform: uppercase;
+	}
+
+	p {
+		font-size: var(--fl1-font-md);
+		font-weight: 400;
+		color: $text;
+		line-height: 1.6;
+		padding-right: 10%;
+
+		a {
+			color: $text;
+			border-bottom: 1px #fff solid;
+		}
+	}
+
+	.avb-banner__caption-actions {
+		display: flex;
+		justify-content: flex-start;
+	}
+}

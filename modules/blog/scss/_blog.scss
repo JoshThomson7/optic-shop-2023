@@ -1,0 +1,29 @@
+/*
+*	Blog styles
+*
+*	Styles for the blog and its templates
+*
+*	@package Blog
+*	@version 1.0
+*/
+@import "../../../scss/inc/vars";
+@import "../../../scss/inc/mixins";
+@import "../../../scss/inc/animations";
+
+section {
+    &.blog { padding: var(--fl1-spacing-xl) 0; display:flex; flex-wrap:wrap; justify-content: space-between;
+        &.home { padding: 40px 0;}
+
+        .max__width { 
+            display: flex;
+            @include breakpoint(mamabear) {flex-direction: column;}
+        }
+    }
+
+}
+
+@import 'inc/_blog-filters';
+@import 'inc/_blog-loop';
+@import 'inc/_blog-single';
+
+.blog__cat--button { flex: 10 100%; display: flex; justify-content: center;}
