@@ -61,9 +61,9 @@ if(!empty($banners)):
 						<div class="avb-banner__media">
 							<?php include AVB_PATH.'templates/'.$banner->layout().'.php'; ?>
 									
-							<div class="squares">
+							<!-- <div class="squares">
 								<?php echo file_get_contents(FL1_PATH.'/img/squares.svg') ?>
-							</div>
+							</div> -->
 
 							<?php if($banner->get_prop('image_mobile')): ?>
 								<div class="avb-banner__medium show-on-mobile image" style="background-image:url(<?php echo $banner->image_mobile(); ?>);">

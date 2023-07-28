@@ -60,7 +60,7 @@
 	h2 {
 		font-size: 3.25rem;
 		font-weight: 500;
-		color: $text;
+		color: $white;
 		line-height: 1.4;
 		&.hidden {
 			text-indent: -9999px;
@@ -83,12 +83,12 @@
 	p {
 		font-size: var(--fl1-font-md);
 		font-weight: 400;
-		color: $text;
+		color: $white;
 		line-height: 1.6;
 		padding-right: 10%;
 
 		a {
-			color: $text;
+			color: $white;
 			border-bottom: 1px #fff solid;
 		}
 	}

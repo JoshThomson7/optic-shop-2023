@@ -200,7 +200,6 @@ $fc_bk_colour in $fc_bk_colours {
                 .feature__text {
 
                     h3,
-                    h5,
                     p,
                     li {
                         color: #fff !important;
@@ -210,6 +209,8 @@ $fc_bk_colour in $fc_bk_colours {
                         a:not(.dropdown) {
                             color: #fff !important;
                         }
+
+                        a.button{color: $primary!important;}
                     }
                 }
             }

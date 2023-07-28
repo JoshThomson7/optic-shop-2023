@@ -7,9 +7,10 @@ $baseFontSize: 1rem; // 16px
 $baseFontColor: #000;
 
 // Colours
-$primary: #203e5f;
+$primary: #050517;
 $primaryLight: #F9ECED;
-$secondary: #eec550;
+$secondary: #F6D139;
+$tertiary: #84DCCF;
 $lightgrey: #F3F4F5;
 $text: $baseFontColor;
 $textLight: #435366;
@@ -24,8 +25,8 @@ $white: #fff;
 :root {
 
     // Colors
-    --fl1-primary: #203e5f;
-    --fl1-secondary: #eec550;
+    --fl1-primary: #050517;
+    --fl1-secondary: #F6D139;
     --fl1-lightgrey: #F3F4F5;
     --fl1-text: #5A5072;
     --fl1-text-light: #b2aebd;

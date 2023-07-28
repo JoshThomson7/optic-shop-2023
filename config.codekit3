@@ -387,19 +387,6 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
-    "\/img\/brownbills-logo.png" : {
-      "ft" : 32768,
-      "iS" : 2774,
-      "oA" : 0,
-      "oAP" : "\/img\/brownbills-logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
     "\/img\/fl1-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -409,6 +396,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/img\/optic-shop-logo.png" : {
+      "ft" : 32768,
+      "iS" : 14852,
+      "oA" : 0,
+      "oAP" : "\/img\/optic-shop-logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/img\/select-arrow-down-white.png" : {
       "ft" : 32768,
@@ -3735,18 +3735,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/style-min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/style-min-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
     "\/style.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -3780,7 +3768,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 695575052.45961595,
-    "displayValue" : "brownbills-2023",
+    "displayValue" : "optic-shop-2023",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-verd",
     "iconImageWasSetByUser" : 0

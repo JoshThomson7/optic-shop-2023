@@ -1,7 +1,7 @@
 <nav id="nav_mobile" class="nav__mobile">
     <div>
         <div class="menu__logo">
-            <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/brownbills-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
+            <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/optic-shop-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
 		</div>
         <ul>
             <?php

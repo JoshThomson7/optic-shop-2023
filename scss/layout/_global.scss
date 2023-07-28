@@ -174,7 +174,11 @@ img {
 	}
 
 	&.secondary {
-		background: var(--fl1-secondary);
+		background: var(--fl1-secondary); color: $primary;
+	}
+
+	&.tertiary {
+		background: $tertiary;
 	}
 
 	&.textLight {

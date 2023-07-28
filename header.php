@@ -40,7 +40,7 @@
 
                         <div class="logo">
                             <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
-                                <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/brownbills-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/optic-shop-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
                             </a>
                         </div><!-- logo -->
                         <?php include FL1_PATH . '/modules/mega-menu.php'; ?>
@@ -50,8 +50,8 @@
                         <nav class="top-nav">
                             <ul>
                                 <li>
-                                    <a href="#" class="button secondary tiny">
-                                        Contact Us
+                                    <a href="/book-appointment" class="button tertiary small">
+                                        Book Appointment
                                     </a>
                                 </li>
                             </ul>

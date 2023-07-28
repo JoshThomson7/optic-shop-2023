@@ -43,9 +43,27 @@
             <div class="footer-col footer-col--main">
                 <div class="footer-menu footer-menu--company">
 
-                    <!-- <figure>
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/brownbills-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
-                    </figure> -->
+                    <div class="footer-menu__heading">
+                        <h5>Contact</h5>
+                        <span class="menu-dropdown"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+
+                    <ul>
+                        <li><i class="fal fa-home"></i>The Optic Shop,<br>St John’s St, Abergavenny,<br>Monmouthsire, NP7 5RT</li>
+
+                        <li>
+                            <a href="tel:01873855664"><i class="fal fa-phone"></i>01873 855664</a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:info@opticshop-aber.co.uk"><i class="fal fa-envelope"></i>info@opticshop-aber.co.uk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col footer-col--main">
+                <div class="footer-menu footer-menu--company">
 
                     <div class="footer-menu__heading">
                         <h5>Connect</h5>
@@ -53,12 +71,8 @@
                     </div>
 
                     <ul>
-                        <li>Cecil House,<br> Norwood Street,<br> Ashford, TN23 1QT</li>
-                        
                         <li class="social">
-                            <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/opticshopabergavenny" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -71,8 +85,7 @@
 
         <div class="subfooter">
             <div class="subfooter--left">
-                <small>&copy;<?php date('Y'); ?> <?php bloginfo('name') ?>. All Rights Reserved.<br>
-                Registered No. 8608477. Registered Office: Cecil House, Norwood Street, Ashford, TN23 1QT. VAT No: 172941593</small>
+                <small>&copy;<?php date('Y'); ?> <?php bloginfo('name') ?>. All Rights Reserved.<br></small>
             </div><!-- subfooter--left -->
 
             <div class="subfooter--right">
