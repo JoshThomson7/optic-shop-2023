@@ -29,11 +29,11 @@ header.header {
 
     .header__main {
         position: relative;
-		margin: var(--fl1-spacing-md) 0 var(--fl1-spacing-md);
+		margin: 10px 0 0;
 
-        @include breakpoint(560px) {
-			margin: var(--fl1-spacing-md) 0;
-		}
+        // @include breakpoint(560px) {
+		// 	margin: var(--fl1-spacing-md) 0;
+		// }
 
         .max__width {
             width: 100%;
@@ -44,15 +44,14 @@ header.header {
         }
 
         &--left {
-            display: flex;
-            align-items: center;
+            
+        }
 
-			@include breakpoint(560px) {
-				width: 100%;
-			}
+        &--centre {
+            display: flex; flex-direction: column; align-items: center;
 
             .logo {
-                width: 340px;
+                width: 511px;
                 transition: all 0.4s ease;
 
 				@include breakpoint(brotherbear) {
@@ -77,58 +76,16 @@ header.header {
         }
 
         &--right {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            
+        }
 
-			@include breakpoint(560px) {
-                display: none;
-            }
+        .social-nav { 
+            display: flex; flex-direction: column; align-items: center; padding: 10px 20px; background: $darkGrey; color: #fff; transition: .3s ease all;
+            &:hover{transform: scale(1.05);}
 
-            nav.top-nav { 
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
+            i{font-size: 26px; margin-bottom: 10px;}
 
-				@include breakpoint(papabear) {
-					padding-bottom: 0;
-				}
-
-                ul { 
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    
-                    li { 
-                        margin-left: 12px;
-
-						a:not(.button) {
-							font-size: 12px;
-							color: var(--fl1-white);
-							font-weight: 600;
-							display: flex;
-							gap: var(--fl1-spacing-xs);
-							align-items: center;
-							position: relative;
-							transition: all 0.1s ease;
-							text-transform: uppercase;
-
-							i { 
-								@include breakpoint(grandmabear) {
-									font-size: var(--fl1-font-xs);
-									padding: var(--fl1-spacing-xs);
-								}
-							}
-
-							span { 
-								@include breakpoint(grandmabear) {
-									display: none;
-								}
-							}
-						}
-                    }
-                }
-            }
+            span{}
         }
 
         .burger__menu {

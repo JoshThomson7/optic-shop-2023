@@ -43,3 +43,12 @@
 @import '../modules/flexible-content/scss/flexible-content';
 
 @import 'layout/footer';
+
+// CUSTOM
+.home{
+  .fc_feature_boxes{
+    .fc-layout-container{
+      background-image: url(img/brick-bg.jpg); background-repeat: no-repeat; background-size: cover;
+    }
+  }
+}

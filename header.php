@@ -34,28 +34,31 @@
                 <div class="max__width">
 
                     <div class="header__main--left">
-                        <a href="#nav_mobile" class="burger__menu">
-                            <i class="fal fa-bars"></i>
+                        <a href="mailto:info@opticshop-aber.co.uk" class="social-nav">
+                            <i class="fal fa-envelope"></i>
+                            <span>Email</span>
                         </a>
+                    </div><!-- left -->
 
+                    <div class="header__main--centre">
                         <div class="logo">
                             <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
                                 <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/optic-shop-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
                             </a>
                         </div><!-- logo -->
+
                         <?php include FL1_PATH . '/modules/mega-menu.php'; ?>
-                    </div><!-- left -->
+
+                        <a href="#nav_mobile" class="burger__menu">
+                            <i class="fal fa-bars"></i>
+                        </a>
+                    </div>
 
                     <div class="header__main--right">
-                        <nav class="top-nav">
-                            <ul>
-                                <li>
-                                    <a href="/book-appointment" class="button tertiary small">
-                                        Book Appointment
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <a href="tel:01873855664" class="social-nav">
+                            <i class="fal fa-phone"></i>
+                            <span>Phone</span>
+                        </a>
                     </div><!-- right -->
 
                 </div><!-- max__width -->

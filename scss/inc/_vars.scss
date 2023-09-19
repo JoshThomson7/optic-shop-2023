@@ -7,13 +7,22 @@ $baseFontSize: 1rem; // 16px
 $baseFontColor: #000;
 
 // Colours
-$primary: #050517;
-$primaryLight: #F9ECED;
-$secondary: #F6D139;
-$tertiary: #84DCCF;
+// $primary: #050517;
+// $primaryLight: #F9ECED;
+$secondary: #BA861A;
+$tertiary: #9DE7D7;
 $lightgrey: #F3F4F5;
 $text: $baseFontColor;
 $textLight: #435366;
+
+$primary: #4D5152;
+$primaryLight: #EDEBE5;
+$offWhite: #EDEBE5;
+$darkGrey: #4D5152;
+$tiffany: #9DE7D7;
+$yellow: #BA861A;
+$teal: #205862; 
+
 $border: #D0D5DA;
 $borderDark: lighten($text, 35%);
 $borderRadius: 8px;
@@ -25,8 +34,8 @@ $white: #fff;
 :root {
 
     // Colors
-    --fl1-primary: #050517;
-    --fl1-secondary: #F6D139;
+    --fl1-primary: #4D5152;
+    --fl1-secondary: #BA861A;
     --fl1-lightgrey: #F3F4F5;
     --fl1-text: #5A5072;
     --fl1-text-light: #b2aebd;

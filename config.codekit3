@@ -7,7 +7,7 @@
       "uuidString" : "681EB742-5211-49D1-A4AF-20F774D71A87"
     }
   ],
-  "creatorBuild" : "34510",
+  "creatorBuild" : "34518",
   "files" : {
     "\/404.php" : {
       "cB" : 0,
@@ -385,6 +385,32 @@
       "oF" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
+    "\/img\/brick-bg-2.png" : {
+      "ft" : 32768,
+      "iS" : 2989907,
+      "oA" : 0,
+      "oAP" : "\/img\/brick-bg-2.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/brick-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 1150910,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/brick-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/img\/fl1-icon.svg" : {
@@ -4665,9 +4691,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0
