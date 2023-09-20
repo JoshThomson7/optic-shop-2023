@@ -41,17 +41,19 @@
                     </div><!-- left -->
 
                     <div class="header__main--centre">
-                        <div class="logo">
+                        <h2>THE OPTIC SHOP</h2>
+                        <span class="line"></span>
+                        <h4>ABERGAVENNY</h4>
+                        <!-- <div class="logo">
                             <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
                                 <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/optic-shop-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
                             </a>
-                        </div><!-- logo -->
+                        </div> -->
+                        <!-- logo -->
 
-                        <?php include FL1_PATH . '/modules/mega-menu.php'; ?>
-
-                        <a href="#nav_mobile" class="burger__menu">
+                        <!-- <a href="#nav_mobile" class="burger__menu">
                             <i class="fal fa-bars"></i>
-                        </a>
+                        </a> -->
                     </div>
 
                     <div class="header__main--right">

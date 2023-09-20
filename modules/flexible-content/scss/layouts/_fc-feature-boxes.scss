@@ -15,9 +15,16 @@
 		transition: all 0.3s ease;
 		display: flex;
 		flex-direction: column;
+		@include breakpoint(brotherbear) {width: 100%;}
 
-		@include breakpoint(brotherbear) {
-			width: 100%;
+		&:hover{
+			.fc__feature__box__inner {transform: scale(1.05); box-shadow: 0 0 20px rgba($offWhite, 0.9);}
+		}
+
+		&.image{
+			&:hover{
+				.fc__feature__box__inner {transform: scale(1);}
+			}
 		}
 
 		// variants
@@ -61,6 +68,8 @@
 			flex-direction: column;
 			gap: var(--fl1-spacing-sm);
 			background: #fff;
+			align-items: center;
+			text-align: center;
 
 			@include breakpoint(sisterbear) {
 				padding: var(--fl1-spacing-md) var(--fl1-spacing-sm);
@@ -92,11 +101,12 @@
 			h3 {
 				font-size: var(--fl1-font-md);
 				color: var(--fl1-primary);
-				font-weight: 600;
+				font-family: $mediumFont;
 				display: flex;
 				flex-direction: column;
 				gap: var(--fl1-spacing-md);
 				line-height: 26px;
+				align-items: center;
 
 				@include breakpoint(sisterbear) {
 					gap: var(--fl1-spacing-sm);

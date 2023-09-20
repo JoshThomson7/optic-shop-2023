@@ -281,6 +281,54 @@
       "oAP" : "\/fonts\/fa\/fa-regular-400.woff2",
       "oF" : 0
     },
+    "\/fonts\/gotham\/gotham-bold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/gotham\/gotham-bold.woff",
+      "oF" : 0
+    },
+    "\/fonts\/gotham\/gotham-bold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/gotham\/gotham-bold.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/gotham\/gotham-medium.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/gotham\/gotham-medium.woff",
+      "oF" : 0
+    },
+    "\/fonts\/gotham\/gotham-thin.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/gotham\/gotham-thin.woff",
+      "oF" : 0
+    },
+    "\/fonts\/gotham\/gotham-thin.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/gotham\/gotham-thin.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/gotham\/gothammedium.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/gotham\/gothammedium.woff2",
+      "oF" : 0
+    },
     "\/fonts\/mont\/Mont-Bold.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -385,19 +433,6 @@
       "oF" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
-      "rq" : 75
-    },
-    "\/img\/brick-bg-2.png" : {
-      "ft" : 32768,
-      "iS" : 2989907,
-      "oA" : 0,
-      "oAP" : "\/img\/brick-bg-2.png",
-      "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
       "rq" : 75
     },
     "\/img\/brick-bg.jpg" : {
@@ -3421,6 +3456,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/scss\/fonts\/_fontawesome.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/scss\/fonts\/_gotham.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/scss\/fonts\/_gotham.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

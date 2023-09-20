@@ -61,6 +61,7 @@
     h2 {
         line-height: 1.4;
         font-weight: 600;
+        font-family: $mediumFont;
         font-size: var(--fl1-font-xl);
         color: var(--fl1-primary);
     }
@@ -180,7 +181,7 @@ $fc_bk_colour in $fc_bk_colours {
 
                 h2,
                 p {
-                    color: #fff !important;
+                    color: $offWhite!important;
                 }
 
                 .fc-squares {
@@ -196,21 +197,28 @@ $fc_bk_colour in $fc_bk_colours {
                 }
             }
 
+            .fc-free-text{
+                h2,
+                p {
+                    color: $offWhite!important;
+                }
+            }
+
             .fc_feature_wrapper {
                 .feature__text {
 
                     h3,
                     p,
                     li {
-                        color: #fff !important;
+                        color: $offWhite!important;
                     }
 
                     .feature__action {
                         a:not(.dropdown) {
-                            color: #fff !important;
+                            color: $offWhite!important;
                         }
 
-                        a.button{color: $primary!important;}
+                        // a.button{color: $primary!important;}
                     }
                 }
             }

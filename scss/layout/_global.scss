@@ -116,7 +116,7 @@ img {
  * Buttons
  */
 .button {
-	font-family: var(--fl1-primary-font);
+	font-family: $mediumFont;
 	font-weight: 700;
 	font-size: var(--fl1-font-xs);
 	padding: var(--fl1-spacing-md) var(--fl1-spacing-lg);
@@ -174,7 +174,7 @@ img {
 	}
 
 	&.secondary {
-		background: var(--fl1-secondary); color: $primary;
+		background: var(--fl1-secondary);
 	}
 
 	&.tertiary {

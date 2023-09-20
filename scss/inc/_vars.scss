@@ -1,8 +1,10 @@
 // https://designs.ai/colors/palette/1427
 
 // Fonts
-$primaryFont: 'Quicksand', sans-serif;
-$secondaryFont: 'Quicksand', sans-serif;
+$primaryFont: 'Gotham Thin', sans-serif;
+$secondaryFont: 'Gotham Thin', sans-serif;
+$boldFont: 'Gotham Bold', sans-serif;
+$mediumFont: 'Gotham Medium', sans-serif;
 $baseFontSize: 1rem; // 16px
 $baseFontColor: #000;
 
@@ -37,7 +39,7 @@ $white: #fff;
     --fl1-primary: #4D5152;
     --fl1-secondary: #BA861A;
     --fl1-lightgrey: #F3F4F5;
-    --fl1-text: #5A5072;
+    --fl1-text: #4D5152;
     --fl1-text-light: #b2aebd;
     --fl1-border: #D0D5DA;
     --fl1-border-dark: lighten($text, 35%);
@@ -47,8 +49,8 @@ $white: #fff;
     --fl1-white: #fff;
 
     // Fonts
-    --fl1-primary-font: 'Quicksand', sans-serif;
-    --fl1-secondary-font: 'Quicksand', sans-serif;
+    --fl1-primary-font: 'Gotham Thin', sans-serif;
+    --fl1-secondary-font: 'Gotham Thin', sans-serif;
     --fl1-base-font-size: 1rem;	// 16px
 
 	// Font sizes

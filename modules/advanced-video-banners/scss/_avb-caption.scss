@@ -5,6 +5,7 @@
 	display: flex;
 	width: 100%;
 	padding-left: calc((100vw - 1172px) / 2);
+	background: $darkGrey;
 
 	@include breakpoint(grandpabear) {
 		padding-left: var(--fl1-spacing-sm);
