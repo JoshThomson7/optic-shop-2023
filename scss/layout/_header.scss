@@ -30,7 +30,8 @@ header.header {
 
     .header__main {
         position: relative;
-		margin: 10px 0 20px;
+        padding: 10px 0 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
         // @include breakpoint(560px) {
 		// 	margin: var(--fl1-spacing-md) 0;
@@ -83,11 +84,11 @@ header.header {
         }
 
         &--right {
-            
+
         }
 
         .social-nav { 
-            font-family: $mediumFont; display: flex; flex-direction: column; align-items: center; padding: 10px 20px; background: $tiffany; color: $darkGrey; transition: .3s ease all;
+            width: 90px; font-family: $mediumFont; display: flex; flex-direction: column; align-items: center; padding: 10px 20px; background: $tiffany; color: $darkGrey; transition: .3s ease all; position: relative; top: 65px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
             &:hover{transform: scale(1.05);}
 
             i{font-size: 26px; margin-bottom: 10px;}

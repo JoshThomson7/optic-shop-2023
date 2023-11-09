@@ -8,7 +8,6 @@ h6 {
 	line-height: 1.4;
 	margin-bottom: var(--fl1-font-xl);
 	padding: 0;
-	font-weight: 600;
 
 	a {
 		color: var(--fl1-primary);
@@ -16,16 +15,16 @@ h6 {
 }
 
 h2 {
-	font-size: var(--fl1-font-xxl);
-}
-h3 {
-	font-size: var(--fl1-font-xl);
-}
-h4 {
 	font-size: var(--fl1-font-lg);
 }
-h5 {
+h3 {
 	font-size: var(--fl1-font-md);
+}
+h4 {
+	font-size: var(--fl1-font-md);
+}
+h5 {
+	font-size: var(--fl1-font-sm);
 }
 h6 {
 	font-size: var(--fl1-font-sm);
@@ -44,7 +43,7 @@ p {
 	}
 
 	strong {
-		font-weight: 600;
+		// font-weight: 600;
 	}
 
 	em { 

@@ -1,3 +1,9 @@
+<div class="book-apt-footer">
+    <div class="max__width">
+        <a href="mailto:info@opticshop-aber.co.uk" target="_blank">Book an Appointment</a>
+    </div>
+</div>
+
 <footer class="footer" role="contentinfo">
 
     <div class="max__width">
@@ -44,35 +50,15 @@
                 <div class="footer-menu footer-menu--company">
 
                     <div class="footer-menu__heading">
-                        <h5>Contact</h5>
-                        <span class="menu-dropdown"><i class="fas fa-chevron-down"></i></span>
-                    </div>
-
-                    <ul>
-                        <li><i class="fal fa-home"></i>The Optic Shop,<br>St John’s St, Abergavenny,<br>Monmouthsire, NP7 5RT</li>
-
-                        <li>
-                            <a href="tel:01873855664"><i class="fal fa-phone"></i>01873 855664</a>
-                        </li>
-
-                        <li>
-                            <a href="mailto:info@opticshop-aber.co.uk"><i class="fal fa-envelope"></i>info@opticshop-aber.co.uk</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-col footer-col--main">
-                <div class="footer-menu footer-menu--company">
-
-                    <div class="footer-menu__heading">
                         <h5>Connect</h5>
                         <span class="menu-dropdown"><i class="fas fa-chevron-down"></i></span>
                     </div>
 
                     <ul>
                         <li class="social">
-                            <a href="https://www.facebook.com/opticshopabergavenny" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/opticshopabergavenny" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/opticshopabergavenny/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/theopticshopa" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                         </li>
                     </ul>
                 </div>

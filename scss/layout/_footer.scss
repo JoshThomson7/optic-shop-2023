@@ -2,14 +2,55 @@
  * Footer
  *
 */
+.book-apt-footer{
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: $secondary;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+        bottom: -29px;
+        z-index: 99999999999;
+        color: white;
+        font-size: 24px;
+        box-shadow: 0 0 10px rgba(0,0,0,.7);
+        transition: transform 0.2s ease-in-out;
+
+        &:hover{
+            transform: translateX(0px); /* Adjust the value to control the shake intensity */
+            animation: shake 0.4s ease-in-out;
+        }
+    }
+}
+
+@keyframes shake {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
 
 .footer {
-
     position: relative;
     background: $primary;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100%;
+    padding-top: 50px;
 
     // .footer__signup {
     //     display: flex;
@@ -175,7 +216,7 @@
     // }
 
     .footer-cols {
-        padding: 40px 0;
+        padding: 40px 0 20px;
         display: flex;
 
         @include breakpoint(brotherbear) {
@@ -184,8 +225,8 @@
         }
 
         .footer-col {
-            width: 25%;
-            padding-left: 5%;
+            width: 33%;
+            // padding-left: 5%;
 
             @include breakpoint(brotherbear) {
                 padding-left: 0;
@@ -299,8 +340,7 @@
 
             h5 {
                 font-size: 16px;
-                font-weight: 600;
-                color: $white;
+                color: $tertiary;
                 margin: 0;
                 padding: 0;
             }
@@ -378,7 +418,7 @@
     }
 
     .footer-legal {
-        padding: var(--fl1-spacing-md) 0;
+        padding: var(--fl1-spacing-md) 0; display: none;
 
         ul {
             display: inline-flex;
@@ -406,7 +446,7 @@
     .subfooter {
         display: flex;
         justify-content: space-between;
-        padding: var(--fl1-spacing-lg) 0;
+        padding: 20px 0 15px;
         border-top: 1px lighten($white, 10%) solid;
 
         @include breakpoint(brotherbear) {

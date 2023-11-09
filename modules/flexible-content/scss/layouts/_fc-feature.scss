@@ -45,14 +45,12 @@ Feature
 
 			h3 {
 				font-size: var(--fl1-font-xl);
-				font-weight: 600;
 				line-height: 1.4;
 				color: var(--fl1-primary);
 			}
 
 			h5 {
-				font-size: var(--fl1-font-xs);
-				font-weight: 600;
+				font-size: 20px;
 				color: $tertiary;
 				text-transform: uppercase;
 				line-height: normal;
@@ -71,11 +69,6 @@ Feature
 
 				a {
 					color: var(--fl1-primary);
-				}
-
-				strong,
-				b {
-					font-weight: 600;
 				}
 			}
 

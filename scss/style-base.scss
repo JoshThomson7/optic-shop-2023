@@ -45,10 +45,152 @@
 @import 'layout/footer';
 
 // CUSTOM
+
+// BANNER
+.home{
+  .avb-banner{
+    .avb-banner__caption{
+      &::before{
+        background-image: url(img/multiple-image-logo.png);
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Place the background behind the content */
+        opacity: 0.2; 
+      }
+    }
+  }
+}
+
+// BRICKS
 .home{
   .fc_feature_boxes{
     .fc-layout-container{
       background-image: url(img/brick-bg.jpg); background-repeat: no-repeat; background-size: cover;
+
+      // FLIPS
+      article{
+        perspective: 1000px;
+
+        &:hover .fc__feature__box__inner {
+          transform: rotateY(180deg);
+        }
+
+        &.image{
+          &:hover .fc__feature__box__inner {
+            transform: rotateY(0deg);
+          }
+        }
+
+        .fc__feature__box__inner{
+          transition: 0.5s;
+          transform-style: preserve-3d;
+          position: relative;
+          padding: 110px;
+
+          h3, p{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            top: 0;
+          }
+
+          h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+          }
+
+          p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            transform: rotateY(180deg);
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// MAP
+.home{
+  .fc_free_text{
+    .fc-bg-theme--grey{
+      background: $tertiary;
+
+      .fc-layout-heading{
+        margin: 0;
+
+        .fc-layout-heading-left{
+          background: $darkGrey;; padding: 10px 0; box-shadow: 0 0 10px rgba(77, 81, 82,.7);
+  
+          h2{color: white;}
+        }
+      }
+    }
+  }
+}
+
+// CUSTOM SECTION
+.home{
+  .custom-contact{
+    padding-bottom: 20px;
+    &::before{
+      background-image: url(img/multiple-image-logo.png);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Place the background behind the content */
+      opacity: 0.2; 
+    }
+  }
+}
+
+// CUSTOM CONTACT
+.cc-container{
+  display: flex; margin: 40px 0; justify-content: space-between;
+
+  .animation-box{
+    background-image: url(img/TheOpticShop-Logo-Dark-Grey-stack.jpg); background-size: cover; background-repeat: no-repeat; width: 30%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); display: flex; align-items: center; justify-content: center;
+  }
+
+  .contact-postcard{
+    width: 60%; display: flex; padding: 40px; justify-content: space-around;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://optic-shop.twsbeta3.co.uk/wp-content/uploads/2023/07/optic-shop-scaled-e1690542163115-2000x600.jpeg); 
+    background-size: cover; background-position: center; color: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+    h3{font-size: 26px; margin-bottom: 40px; color: $tertiary;}
+
+    a{color: #fff;
+      i{}
+    }
+
+    .contact{display: flex;flex-direction: column;
+      
+      ul{
+        li{margin-bottom: 35px;}
+      }
+    }
+
+    .opening-hours{
+
+      ul{
+        li{margin-bottom: 10px;
+          span{color: $secondary;}
+        }
+      }
     }
   }
 }

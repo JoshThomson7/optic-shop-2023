@@ -305,6 +305,14 @@
       "oAP" : "\/fonts\/gotham\/gotham-medium.woff",
       "oF" : 0
     },
+    "\/fonts\/gotham\/gotham-medium.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/gotham\/gotham-medium.woff2",
+      "oF" : 0
+    },
     "\/fonts\/gotham\/gotham-thin.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -319,14 +327,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/fonts\/gotham\/gotham-thin.woff2",
-      "oF" : 0
-    },
-    "\/fonts\/gotham\/gothammedium.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/fonts\/gotham\/gothammedium.woff2",
       "oF" : 0
     },
     "\/fonts\/mont\/Mont-Bold.woff" : {
@@ -458,6 +458,45 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/multiple-image-logo-edited.png" : {
+      "ft" : 32768,
+      "iS" : 489012,
+      "oA" : 0,
+      "oAP" : "\/img\/multiple-image-logo-edited.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/multiple-image-logo-rotated-new.png" : {
+      "ft" : 32768,
+      "iS" : 489012,
+      "oA" : 0,
+      "oAP" : "\/img\/multiple-image-logo-rotated-new.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/multiple-image-logo.png" : {
+      "ft" : 32768,
+      "iS" : 262886,
+      "oA" : 0,
+      "oAP" : "\/img\/multiple-image-logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/optic-shop-logo.png" : {
       "ft" : 32768,
       "iS" : 14852,
@@ -546,6 +585,71 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/img\/TheOpticShop-Logo-Dark-Grey-stack.jpg" : {
+      "ft" : 16384,
+      "iS" : 1364405,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/TheOpticShop-Logo-Dark-Grey-stack.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/TheOpticShop-Logo-Dark-Grey.jpg" : {
+      "ft" : 16384,
+      "iS" : 1297328,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/TheOpticShop-Logo-Dark-Grey.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/TheOpticShop-Logo-Mono.jpg" : {
+      "ft" : 16384,
+      "iS" : 978475,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/TheOpticShop-Logo-Mono.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/TheOpticShop-Logo-White-Grey.jpg" : {
+      "ft" : 16384,
+      "iS" : 1136442,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/TheOpticShop-Logo-White-Grey.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/TheOpticShop-Logo-White.jpg" : {
+      "ft" : 16384,
+      "iS" : 978955,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/TheOpticShop-Logo-White.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/index.php" : {
       "cB" : 0,

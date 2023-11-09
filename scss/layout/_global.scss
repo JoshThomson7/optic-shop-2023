@@ -2,7 +2,6 @@
 body {
 	font-family: var(--fl1-primary-font);
 	font-size: var(--fl1-base-font-size);
-	font-weight: 400;
 	color: var(--fl1-text);
 	overflow-x: hidden;
 
@@ -117,7 +116,6 @@ img {
  */
 .button {
 	font-family: $mediumFont;
-	font-weight: 700;
 	font-size: var(--fl1-font-xs);
 	padding: var(--fl1-spacing-md) var(--fl1-spacing-lg);
 	display: flex;
@@ -257,7 +255,6 @@ img {
 		a,
 		span {
 			color: var(--fl1-primary);
-			font-weight: 600;
 		}
 	}
 }
