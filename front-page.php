@@ -26,7 +26,7 @@ FC_Helpers::flexible_content(); ?>
 
                     <ul>
                         <li>Monday | 9am-5pm</li>
-                        <li><span>Tuesday | CLOSED</span></li>
+                        <li>Tuesday | 9am-5pm</li>
                         <li>Wednesday | 9am-5pm</li>
                         <li>Thursday | 9am-5pm</li>
                         <li>Friday | 9am-5pm</li>

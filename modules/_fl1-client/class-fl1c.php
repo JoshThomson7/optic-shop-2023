@@ -101,4 +101,4 @@ class FL1_Client {
 }
 
 // Release the Kraken!
-new FL1_Client('ins', 'Optic Shop', 'fl1-client');
+new FL1_Client('ins', 'Insignis', 'fl1-client');

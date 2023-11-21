@@ -45,38 +45,10 @@ class FL1C_CPT {
             FL1C_SLUG,
             '',
             'dashicons-flag',
-            32
+            2
         );
 
         $submenu_pages = array(
-            array(
-                'page_title'  => 'Banks',
-                'menu_title'  => 'Banks',
-                'capability'  => 'edit_posts',
-                'menu_slug'   => 'edit.php?post_type=bank',
-                'function'    => null,
-            ),
-            array(
-                'page_title'  => 'FAQs',
-                'menu_title'  => 'FAQs',
-                'capability'  => 'edit_posts',
-                'menu_slug'   => 'edit.php?post_type=faq',
-                'function'    => null,
-            ),
-				array(
-					'page_title'  => '',
-					'menu_title'  => '&nbsp;- Categories',
-					'capability'  => 'edit_posts',
-					'menu_slug'   => 'edit-tags.php?taxonomy=faq_category&post_type=faq',
-					'function'    => null,
-				),
-			array(
-				'page_title'  => 'Rates',
-				'menu_title'  => 'Rates',
-				'capability'  => 'edit_posts',
-				'menu_slug'   => 'edit.php?post_type=rate',
-				'function'    => null,
-			),
             array(
                 'page_title'  => 'Team',
                 'menu_title'  => 'Team',
@@ -84,20 +56,6 @@ class FL1C_CPT {
                 'menu_slug'   => 'edit.php?post_type=team',
                 'function'    => null,
             ),
-            array(
-                'page_title'  => 'Testimonials',
-                'menu_title'  => 'Testimonials',
-                'capability'  => 'edit_posts',
-                'menu_slug'   => 'edit.php?post_type=testimonial',
-                'function'    => null,
-            ),
-				array(
-					'page_title'  => '',
-					'menu_title'  => '&nbsp;- Categories',
-					'capability'  => 'edit_posts',
-					'menu_slug'   => 'edit-tags.php?taxonomy=testimonial_category&post_type=testimonial',
-					'function'    => null,
-				),
         );
 
         foreach ( $submenu_pages as $submenu ) {
@@ -136,165 +94,6 @@ class FL1C_CPT {
         }
 
         return $parent_file;
-
-    }
-
-	/**
-     * Banks CPT
-     */
-    private function register_bank_cpt() {
-
-        // CPT
-        $cpt = new FL1_CPT(
-            array(
-                'post_type_name' => 'bank',
-                'plural' => 'Banks',
-                'menu_name' => 'Banks'
-            ),
-            array(
-                'menu_position' => 21,
-                'rewrite' => array( 'slug' => 'bank', 'with_front' => true ),
-                'publicly_queryable' => false,
-				'exclude_from_search' => false,
-				'capability_type' => 'page',
-                'generator' => FL1C_SLUG
-            )
-        );
-
-        $cpt->columns(array(
-            'cb' => '<input type="checkbox" />',
-            'logo' => __('Logo'),
-            'title' => __('Name'),
-            'bio' => __('Bio')
-        ));
-
-        $cpt->populate_column('logo', function($column, $post) {
-
-            $post_id = $post->ID;
-            $bank = new Ins_bank($post_id);
-			$logo = $bank->image(300, 100, false);
-
-            if(is_array($logo) && !empty($logo)) {
-				echo '<a href="'.get_admin_url().'post.php?post='.$post_id.'&action=edit"><img src="'.$logo['url'].'" style="width: 120px;" /></a>';
-
-			} else {
-				echo __( '<div class="dashicons dashicons-format-image" style="font-size:48px; height:48px; color:#e0e0e0;"></div>' );
-
-			}
-        
-        });
-
-        $cpt->populate_column('bio', function($column, $post) {
-
-            $post_id = $post->ID;
-            $bank = new Ins_bank($post_id);
-
-			echo $bank->bio(45);
-        
-        });
-
-    }
-
-	/**
-     * Banks CPT
-     */
-    private function register_faq_cpt() {
-
-        // CPT
-        $cpt = new FL1_CPT(
-            array(
-                'post_type_name' => 'faq',
-                'plural' => 'FAQs',
-                'menu_name' => 'FAQs'
-            ),
-            array(
-                'menu_position' => 21,
-                'rewrite' => array( 'slug' => 'faq', 'with_front' => true ),
-                'publicly_queryable' => false,
-				'exclude_from_search' => true,
-                'generator' => FL1C_SLUG
-            )
-        );
-
-		// Taxonomies
-        $cpt->register_taxonomy(
-            array(
-                'taxonomy_name' => 'faq_category',
-                'slug' => 'faq_category',
-                'singular' => 'FAQ Category',
-                'plural' => 'FAQ Categories',
-				'public' => false,
-				'query_var' => false,
-				'rewrite' => false,
-				'publicly_queryable' => false
-            )
-        );
-
-        $cpt->columns(array(
-            'cb' => '<input type="checkbox" />',
-            'title' => __('Question'),
-            'answer' => __('Answer'),
-            'faq_category' => __('Categories'),
-            'date' => __('Published'),
-        ));
-
-        $cpt->populate_column('answer', function($column, $post) {
-
-            $post_id = $post->ID;
-			$faq = new FL1C_FAQ($post_id);
-			
-			echo $faq->answer(50);    
-        
-        });
-
-    }
-
-	/**
-     * Rate CPT
-     */
-    private function register_rate_cpt() {
-
-        // CPT
-        $cpt = new FL1_CPT(
-            array(
-                'post_type_name' => 'rate',
-                'plural' => 'Rates',
-                'menu_name' => 'Rates'
-            ),
-            array(
-                'menu_position' => 21,
-                'rewrite' => array( 'slug' => 'rate', 'with_front' => true ),
-                'publicly_queryable' => false,
-				'exclude_from_search' => true,
-                'generator' => FL1C_SLUG
-            )
-        );
-
-		$cols = array(
-			'cb' => '<input type="checkbox" />',
-            'title' => __('Client'),
-		);
-
-		$extra_cols = array(
-			'easy_access' => __('Easy Access'),
-            '30-45_day_notice' => __('30-45 Day Notice'),
-            '90-100_day_notice' => __('90-100 Day Notice'),
-            '3_month_fixed_term' => __('3 Month Fixed Term'),
-			'6_month_fixed_term' => __('6 Month Fixed Term'),
-			'1_year_fixed_term' => __('1 Year Fixed Term'),
-			'2_year_fixed_term' => __('2 Year Fixed Term')
-		);
-
-        $cpt->columns(array_merge($cols, $extra_cols));
-
-		foreach($extra_cols as $key => $label) {
-			$cpt->populate_column($key, function($column, $post) {
-				$post_id = $post->ID;
-				$rate = new Ins_Rate($post_id);
-				$the_rate = $rate->rate($column);
-				echo $the_rate != 0 ? '<strong>'.$the_rate.'%</strong>' : '';
-			});
-		}
 
     }
 
@@ -369,68 +168,6 @@ class FL1C_CPT {
 
     }
 
-    /**
-     * Testimonials CPT
-     */
-    private function register_testimonial_cpt() {
-
-        // CPT
-        $cpt = new FL1_CPT(
-            array(
-                'post_type_name' => 'testimonial',
-                'plural' => 'Testimonials',
-                'menu_name' => 'Testimonials'
-            ),
-            array(
-                'menu_position' => 21,
-                'rewrite' => array( 'slug' => 'testimonial', 'with_front' => true ),
-                'publicly_queryable' => false,
-                'generator' => FL1C_SLUG
-            )
-        );
-
-		// Taxonomies
-        $cpt->register_taxonomy(
-            array(
-                'taxonomy_name' => 'testimonial_category',
-                'slug' => 'testimonial_category',
-                'singular' => 'Testimonial Category',
-                'plural' => 'Testimonial Categories',
-				'public' => false,
-				'query_var' => false,
-				'rewrite' => false,
-				'publicly_queryable' => false
-            )
-        );
-
-        $cpt->columns(array(
-            'cb' => '<input type="checkbox" />',
-            //'rating' => __('Rating'),
-            'title' => __('Name'),
-            'quote' => __('Quote'),
-            'testimonial_category' => __('Categories'),
-        ));
-
-        // $cpt->populate_column('rating', function($column, $post) {
-
-        //     $post_id = $post->ID;
-        //     $testimonial = new FL1C_Testimonial($post_id);
-            
-        //     $testimonial->rating_display();
-        
-        // });
-
-        $cpt->populate_column('quote', function($column, $post) {
-
-            $post_id = $post->ID;
-            $testimonial = new FL1C_Testimonial($post_id);
-            
-            echo $testimonial->quote(30);
-        
-        });
-
-    }
-
     public function column_widths() {
         $screen = get_current_screen();
 
@@ -466,16 +203,16 @@ class FL1C_CPT {
 	 */
 	public function acf_init() {
 
-        if(function_exists('acf_add_options_sub_page')) {
+        // if(function_exists('acf_add_options_sub_page')) {
         
-            acf_add_options_sub_page(array(
-                'page_title'  => 'Settings',
-                'menu_title'  => 'Settings',
-                'menu_slug' => 'fl1c-settings',
-                'parent_slug' => FL1C_SLUG,
-            ));
+        //     acf_add_options_sub_page(array(
+        //         'page_title'  => 'Settings',
+        //         'menu_title'  => 'Settings',
+        //         'menu_slug' => 'fl1c-settings',
+        //         'parent_slug' => FL1C_SLUG,
+        //     ));
 
-        }
+        // }
 
     }
 

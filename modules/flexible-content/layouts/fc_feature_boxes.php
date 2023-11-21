@@ -56,34 +56,38 @@ if(get_sub_field('feature_boxes_animate')) {
 		$feature_box_classes = array_merge($feature_box_classes, $feature_boxes_classes);
     ?>
         <article class="<?php echo join(' ', $feature_box_classes); ?>">
-            <div class="fc__feature__box__inner"<?php echo $bg_img; ?>>
-				<?php if($type !== 'image'): ?>
-					<h3>
-						<?php if(get_sub_field('feature_box_icon') || get_sub_field('feature_box_img')): ?>
-							<figure class="<?php echo $fig_class; ?>">
-								<?php if(get_sub_field('feature_box_img')): ?>
-									<?php echo file_get_contents(wp_get_original_image_path(get_sub_field('feature_box_img'))); ?>
-								<?php elseif(get_sub_field('feature_box_icon')): ?>
-									<i class="<?php the_sub_field('feature_box_icon'); ?>"></i>
-								<?php endif; ?>
-							</figure>
-						<?php endif; ?>
-						<?php if(get_sub_field('feature_box_button_url')): ?><a href="<?php the_sub_field('feature_box_button_url'); ?>" title="<?php echo strip_tags(get_sub_field('feature_box_heading')); ?>"><?php endif; ?>
+			
+				<div class="fc__feature__box__inner"<?php echo $bg_img; ?>>
+					<?php if($type !== 'image'): ?>
+						<h3>
+							<?php if(get_sub_field('feature_box_icon') || get_sub_field('feature_box_img')): ?>
+								<figure class="<?php echo $fig_class; ?>">
+									<?php if(get_sub_field('feature_box_img')): ?>
+										<?php echo file_get_contents(wp_get_original_image_path(get_sub_field('feature_box_img'))); ?>
+									<?php elseif(get_sub_field('feature_box_icon')): ?>
+										<i class="<?php the_sub_field('feature_box_icon'); ?>"></i>
+									<?php endif; ?>
+								</figure>
+							<?php endif; ?>
+
 							<?php the_sub_field('feature_box_heading'); ?>
-						<?php if(get_sub_field('feature_box_button_url')): ?></a><?php endif; ?>
-					</h3>
+						</h3>
 
-					<?php the_sub_field('feature_box_content'); ?>
-
-					<?php
-						if(get_sub_field('feature_box_button_label') && get_sub_field('feature_box_button_url')):
-					?>
-						<a href="<?php the_sub_field('feature_box_button_url'); ?>" class="link animate-icon">
-							<?php the_sub_field('feature_box_button_label'); ?> <i class="fa fa-chevron-right"></i>
+						<a href="<?php the_sub_field('feature_box_button_url'); ?>">
+							<?php the_sub_field('feature_box_content'); ?>
 						</a>
+
+						<?php
+							if(get_sub_field('feature_box_button_label') && get_sub_field('feature_box_button_url')):
+						?>
+							<a href="<?php the_sub_field('feature_box_button_url'); ?>" class="link animate-icon">
+								<?php the_sub_field('feature_box_button_label'); ?> <i class="fa fa-chevron-right"></i>
+							</a>
+						<?php endif; ?>
 					<?php endif; ?>
-				<?php endif; ?>
-            </div><!-- fc__feature__box__inner -->
+					
+				</div><!-- fc__feature__box__inner -->
+			
         </article>
     <?php endwhile; ?>
 </div><!-- fc_feature_boxes_wrapper -->
