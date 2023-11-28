@@ -25,20 +25,30 @@ jQuery(document).ready(function($){
             galleryItems = 3
         }
 
-        $('.gallery__images.gallery__carousel').lightSlider({
-            item: galleryItems,
-            cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-            controls: true,
-            prevHtml: '<i class="fas fa-chevron-left"></i>',
-            nextHtml: '<i class="fas fa-chevron-right"></i>',
-            pager: true,
-            slideMargin: 0,
-            enableDrag: false,
+        $('.gallery__images.gallery__carousel').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: false,
+            fade: false,
+            adaptiveHeight: true,
+            cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
             responsive : [
                 {
-                    breakpoint: 800,
+                    breakpoint: 900,
                     settings: {
-                        item:1
+                      slidesToShow: 4,
+                      slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 1
                     }
                 }
             ]

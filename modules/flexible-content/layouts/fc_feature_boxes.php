@@ -73,9 +73,13 @@ if(get_sub_field('feature_boxes_animate')) {
 							<?php the_sub_field('feature_box_heading'); ?>
 						</h3>
 
-						<a href="<?php the_sub_field('feature_box_button_url'); ?>">
+						<?php if(get_sub_field('feature_box_button_url')): ?>
+							<a href="<?php the_sub_field('feature_box_button_url'); ?>">
+								<?php the_sub_field('feature_box_content'); ?>
+							</a>
+						<?php else: ?>
 							<?php the_sub_field('feature_box_content'); ?>
-						</a>
+						<?php endif; ?>
 
 						<?php
 							if(get_sub_field('feature_box_button_label') && get_sub_field('feature_box_button_url')):

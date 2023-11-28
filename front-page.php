@@ -8,6 +8,10 @@ FC_Helpers::flexible_content(); ?>
     <div class="max__width">
         <div class="cc-container">
             <div class="animation-box">
+                <video id="video" autoplay loop muted>
+                    <source src="https://optic-shop.twsbeta3.co.uk/wp-content/uploads/2023/11/optic-shop.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
     
             <div class="contact-postcard">

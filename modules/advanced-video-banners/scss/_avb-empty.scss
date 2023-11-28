@@ -10,9 +10,15 @@
 		.avb-banner__caption {
 			padding: var(--fl1-spacing-xl) 0 var(--fl1-spacing-xl);
 
-			.avb-banner__caption-wrap { 
-				padding: 0;
-				width: 100%;
+			.max__width{
+				display: flex; justify-content: center;
+
+				.avb-banner__caption-wrap { 
+					padding: 0;
+					width: 100%;
+
+					h1{font-size: 2rem;}
+				}
 			}
 		}
 	}

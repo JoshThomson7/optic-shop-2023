@@ -99,7 +99,7 @@
 			}
 
 			h3 {
-				font-size: var(--fl1-font-md);
+				font-size: var(--fl1-font-lg);
 				color: var(--fl1-primary);
 				font-family: $mediumFont;
 				display: flex;
@@ -181,6 +181,12 @@
 						}
 					}
 				}
+			}
+
+			ul{
+				list-style: disc;
+
+				li{color: #fff; padding-bottom: 15px;}
 			}
 		}
 
