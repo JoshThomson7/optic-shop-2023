@@ -2067,6 +2067,124 @@
       "oAP" : "\/modules\/blog\/templates\/blog.php",
       "oF" : 0
     },
+    "\/modules\/fl1-client\/assets\/js\/ins-banks.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/assets\/js\/ins-banks.min-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
+    "\/modules\/fl1-client\/class-fl1c-cpt.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-fl1c-cpt.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-fl1c-faq.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-fl1c-faq.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-fl1c-public.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-fl1c-public.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-fl1c-team.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-fl1c-team.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-fl1c-testimonial.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-fl1c-testimonial.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-fl1c-user.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-fl1c-user.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-fl1c.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-fl1c.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-ins-bank.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-ins-bank.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-ins-banks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-ins-banks.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/class-ins-rate.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/class-ins-rate.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/js\/ins-banks.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/js\/ins-banks-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
+    "\/modules\/fl1-client\/templates\/banks\/banks-loop.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/templates\/banks\/banks-loop.php",
+      "oF" : 0
+    },
+    "\/modules\/fl1-client\/templates\/team\/single-team.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/fl1-client\/templates\/team\/single-team.php",
+      "oF" : 0
+    },
     "\/modules\/flexible-content\/acf-json\/group_5acf50292c7aa.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -4045,6 +4163,18 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/style-base-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/style-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/style-min-min.css",
       "oF" : 0,
       "pg" : 0
     },
