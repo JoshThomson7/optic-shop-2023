@@ -36,7 +36,9 @@ Accordion
 			font-size: var(--fl1-font-md);
 			color: var(--fl1-primary);
 			line-height: 1.4;
-			font-weight: 600;
+			margin-bottom: 10px;
+			// border: 1px solid $lightgrey;
+			box-shadow: 0 1px 4px rgba(0,0,0, 0.5);
 
 			i {
 				display: block;

@@ -69,6 +69,7 @@
 			gap: var(--fl1-spacing-sm);
 			background: #fff;
 			align-items: center;
+			justify-content: space-between;
 			text-align: center;
 
 			@include breakpoint(sisterbear) {
@@ -167,7 +168,7 @@
 				color: var(--fl1-primary);
 				display: flex;
 				align-items: center;
-				align-self: flex-start;
+				align-self: center;
 
 				i {
 					font-size: 14px;
