@@ -56,6 +56,14 @@
 			}
 		}
 
+		&.one__fifth {
+			width: math.percentage(math.div(1, 5));
+
+			@include breakpoint(brotherbear) {
+				width: 100%;
+			}
+		}
+
 		.fc__feature__box__inner {
 			padding: var(--fl1-spacing-xxl) var(--fl1-spacing-lg);
 			display: flex;
@@ -188,6 +196,35 @@
 				list-style: disc;
 
 				li{color: #fff; padding-bottom: 15px;}
+			}
+		}
+
+		&.teal{
+			.fc__feature__box__inner {
+				background: $tertiary;
+
+				h3,
+				p {
+					color: #fff;
+				}
+
+				h3 {
+					figure {
+						border-color: #fff;
+
+						i {
+							color: #fff;
+						}
+					}
+
+					a {
+						color: #fff;
+					}
+				}
+
+				a.link {
+					color: #fff;
+				}
 			}
 		}
 

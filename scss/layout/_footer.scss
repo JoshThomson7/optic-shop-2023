@@ -448,6 +448,7 @@
         justify-content: space-between;
         padding: 20px 0 15px;
         border-top: 1px lighten($white, 10%) solid;
+        font-family: $secondaryFont;
 
         @include breakpoint(brotherbear) {
             flex-direction: column;
