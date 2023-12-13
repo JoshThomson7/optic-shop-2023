@@ -20,11 +20,10 @@
 	.avb-banner__caption-wrap {
 		display: flex;
 		flex-direction: column;
-		gap: var(--fl1-spacing-xl);
 		width: 50%;
 		padding: 40px 25px;
 		align-self: center;
-		background: $darkGrey;
+		background: #4E4E4E;
 		// margin-left: 2rem;
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 		max-width: 500px;
@@ -36,6 +35,8 @@
 		@include breakpoint(mamabear) {
 			width: 100%;
 		}
+
+		img{width: 200px; margin: 0 auto;}
 
 		figure {
 			img {

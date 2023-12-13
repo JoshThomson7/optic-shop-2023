@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 class AVB_Banner_Image extends AVB_Banner {
 
-    public function image($return = 'url', $width = 2000, $height = 1049, $crop = true) {
+    public function image($return = 'url', $width = 2000, $height = 1200, $crop = true) {
 
         $image_id = $this->get_prop('image');
         $image = '';
