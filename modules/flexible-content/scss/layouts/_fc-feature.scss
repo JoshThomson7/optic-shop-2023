@@ -27,7 +27,8 @@ Feature
 			flex-direction: column;
 			gap: var(--fl1-spacing-md);
 			justify-content: center;
-
+			padding-top: 30px;
+			padding-bottom: 30px;
 
 			@include breakpoint(grandmabear) {
 				border-left: 20px solid transparent;
@@ -42,6 +43,8 @@ Feature
 				width: 100%;
 				border-left: none;
 			}
+
+			img{width: auto;}
 
 			h3 {
 				font-size: var(--fl1-font-xl);
@@ -214,6 +217,12 @@ Feature
 					padding: var(--fl1-spacing-lg);
 				}
 			}
+
+			.feature__image{
+				.small-img{
+					max-width: 170px; position: absolute; top: 0; left: 0px; transform: rotate(-10deg);
+				}
+			}
 		}
 
 		&.right {
@@ -231,6 +240,12 @@ Feature
 					padding: var(--fl1-spacing-lg);
 				}
 			}
+
+			.feature__image{
+				.small-img{
+					max-width: 170px; position: absolute; top: 0; right: 0px; transform: rotate(10deg);
+				}
+			}
 		}
 
 	}
@@ -246,7 +261,7 @@ Feature
 
 			.feature__image {
 				border-right: 40px solid transparent;
-				overflow: hidden;
+				// overflow: hidden;
 				flex: 1;
 				position: sticky;
 				top: 20px;

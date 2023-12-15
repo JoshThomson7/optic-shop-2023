@@ -51,7 +51,6 @@
 
                     <div class="footer-menu__heading">
                         <h5>Connect</h5>
-                        <span class="menu-dropdown"><i class="fas fa-chevron-down"></i></span>
                     </div>
 
                     <ul>

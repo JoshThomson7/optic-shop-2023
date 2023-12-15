@@ -17,6 +17,8 @@ if($attachment_id) {
     $feature_text_width = get_sub_field('feature_text_width').'%';
 }
 
+$small_image = get_sub_field('small_image');
+
 $dropdown = get_sub_field('feature_dropdown_links');
 $top_heading = get_sub_field('feature_top_heading');
 $heading = get_sub_field('feature_heading');
@@ -48,13 +50,16 @@ $video_id = get_sub_field('feature_video_id');
 			?>
 				<div class="feature__image-video video-pop">
 					<a href="<?php echo $url_play; ?>" class="fa-regular fa-play"></a>
-				</div>
+				</div> 
 			<?php endif; ?>
             <?php if($attachment_id): ?>
 				<?php if($open['is_full_width']): ?>
 					<div class="feature__image-expand" style="background-image: url(<?php echo $feature_img['url']; ?>);"></div>
 				<?php endif; ?>
 				<img src="<?php echo $feature_img['url']; ?>" />
+				<?php if($small_image): ?>
+					<img src="<?php echo $small_image; ?>" class="small-img" />
+				<?php endif; ?>
             <?php endif; ?>
         </div><!-- feature__image -->
     <?php endif; ?>

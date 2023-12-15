@@ -471,6 +471,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/multiple-image-logo-opacity.png" : {
+      "ft" : 32768,
+      "iS" : 214337,
+      "oA" : 0,
+      "oAP" : "\/img\/multiple-image-logo-opacity.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/multiple-image-logo-rotated-new.png" : {
       "ft" : 32768,
       "iS" : 489012,
@@ -502,6 +515,19 @@
       "iS" : 14852,
       "oA" : 0,
       "oAP" : "\/img\/optic-shop-logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/output-onlinepngtools.png" : {
+      "ft" : 32768,
+      "iS" : 174808,
+      "oA" : 0,
+      "oAP" : "\/img\/output-onlinepngtools.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

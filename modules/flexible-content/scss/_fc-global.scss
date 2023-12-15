@@ -167,13 +167,14 @@
 /// Background colours
 $fc_bk_colours: (
     blue: var(--fl1-primary),
-    grey: var(--fl1-lightgrey)
+    grey: var(--fl1-lightgrey),
+    pattern: url(img/multiple-image-logo-opacity-10.png)
 );
 
 @each $key,
 $fc_bk_colour in $fc_bk_colours {
     .fc-bg-theme--#{$key} {
-        background-color: $fc_bk_colour;
+        background: $fc_bk_colour;
 
         @if $key ==blue {
             .fc-layout-heading {
