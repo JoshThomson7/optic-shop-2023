@@ -34,6 +34,10 @@
                 <div class="max__width">
 
                     <div class="header__main--left">
+                        <a href="#" class="social-nav-top left">
+                            <span>Contact Lens<br>Reorder</span>
+                        </a>
+
                         <a href="mailto:info@opticshop-aber.co.uk" class="social-nav">
                             <i class="fal fa-envelope"></i>
                             <span>Email</span>
@@ -53,6 +57,10 @@
                     </div>
 
                     <div class="header__main--right">
+                        <a href="#" class="social-nav-top right">
+                            <span>Are we<br>open?</span>
+                        </a>
+
                         <a href="tel:01873855664" class="social-nav">
                             <i class="fal fa-phone"></i>
                             <span>Phone</span>

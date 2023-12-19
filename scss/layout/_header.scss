@@ -93,8 +93,17 @@ header.header {
 
         }
 
+        .social-nav-top{
+            text-align: center; width: 150px; font-family: $mediumFont; display: flex; flex-direction: column; align-items: center; padding: 10px 20px; background: $secondary; color: #fff; transition: .3s ease all; position: relative; top: 25px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            &:hover{transform: scale(1.05);}
+
+            &.left{right: 30px;}
+
+            &.right{left: -30px;}
+        }
+
         .social-nav { 
-            width: 90px; font-family: $mediumFont; display: flex; flex-direction: column; align-items: center; padding: 10px 20px; background: $tiffany; color: $darkGrey; transition: .3s ease all; position: relative; top: 65px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            width: 90px; font-family: $mediumFont; display: flex; flex-direction: column; align-items: center; padding: 10px 20px; background: $tiffany; color: $darkGrey; transition: .3s ease all; position: relative; top: 45px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
             &:hover{transform: scale(1.05);}
 
             i{font-size: 26px; margin-bottom: 10px;}

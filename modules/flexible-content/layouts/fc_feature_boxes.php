@@ -34,7 +34,7 @@ if(get_sub_field('feature_boxes_animate')) {
 
 		$bg_img = '';
 		if($type === 'image') {
-			$img = vt_resize(get_sub_field('image'), '', 800, 800, true);
+			$img = vt_resize(get_sub_field('image'), '', 800, 600, true);
 			$bg_img = is_array($img) ? ' style="background-image: url(' . $img['url']. ');"' : '';
 		}
 

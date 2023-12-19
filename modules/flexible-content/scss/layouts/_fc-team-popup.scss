@@ -50,10 +50,14 @@ Team Pop-up
 		.team__popup__img {
 			width: 40%;
 			position: relative;
-			overflow: hidden;
+			// overflow: hidden;
 			@include breakpoint(mamabear) {
 				width: 100%;
 				margin-bottom: 20px;
+			}
+
+			.secondary-image{
+				width: 200px; position: absolute; left: -40px; top: -40px; transform: rotate(-5deg);
 			}
 
 			img {
@@ -115,6 +119,7 @@ Team Pop-up
 					color: var(--fl1-text);
 				}
 			}
+
 		}
 
 		h3 {

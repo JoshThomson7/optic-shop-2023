@@ -471,6 +471,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/multiple-image-logo-opacity-10.png" : {
+      "ft" : 32768,
+      "iS" : 174808,
+      "oA" : 0,
+      "oAP" : "\/img\/multiple-image-logo-opacity-10.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/multiple-image-logo-opacity.png" : {
       "ft" : 32768,
       "iS" : 214337,
@@ -515,19 +528,6 @@
       "iS" : 14852,
       "oA" : 0,
       "oAP" : "\/img\/optic-shop-logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/img\/output-onlinepngtools.png" : {
-      "ft" : 32768,
-      "iS" : 174808,
-      "oA" : 0,
-      "oAP" : "\/img\/output-onlinepngtools.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1417,124 +1417,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
-    },
-    "\/modules\/_fl1-client\/assets\/js\/ins-banks.min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/assets\/js\/ins-banks.min-min.js",
-      "oF" : 0,
-      "sC" : 1,
-      "tS" : 0
-    },
-    "\/modules\/_fl1-client\/class-fl1c-cpt.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-fl1c-cpt.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-fl1c-faq.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-fl1c-faq.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-fl1c-public.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-fl1c-public.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-fl1c-team.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-fl1c-team.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-fl1c-testimonial.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-fl1c-testimonial.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-fl1c-user.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-fl1c-user.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-fl1c.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-fl1c.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-ins-bank.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-ins-bank.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-ins-banks.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-ins-banks.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/class-ins-rate.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/class-ins-rate.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/js\/ins-banks.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/modules\/fl1-client\/assets\/js\/ins-banks.min.js",
-      "oF" : 2,
-      "sC" : 1,
-      "tS" : 0
-    },
-    "\/modules\/_fl1-client\/templates\/banks\/banks-loop.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/templates\/banks\/banks-loop.php",
-      "oF" : 0
-    },
-    "\/modules\/_fl1-client\/templates\/team\/single-team.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/_fl1-client\/templates\/team\/single-team.php",
-      "oF" : 0
     },
     "\/modules\/advanced-events-framework\/acf-json\/group_58245454a89ca.json" : {
       "ft" : 524288,

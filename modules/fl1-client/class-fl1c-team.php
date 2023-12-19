@@ -118,6 +118,25 @@ class FL1C_Team_Member
     }
 
     /**
+     * Returns featured image.
+     * 
+     * @param int $width
+     * @param int $height
+     * @param bool $crop
+     * @see vt_resize() in modules/wp-image-resize.php
+     */
+    public function image_two($width = 300, $height = 300, $crop = true)
+    {
+        $attachment_id_second = get_field('team_image', $this->id);
+
+        if ($attachment_id_second) {
+            return vt_resize($attachment_id_second, '', $width, $height, $crop);
+        }
+
+        return false;
+    }
+
+    /**
      * Returns job_title.
      * 
      * @return string

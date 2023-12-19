@@ -60,6 +60,10 @@ $team_total = $team_query->post_count;
 			$member_id = preg_replace("#[^A-Za-z0-9]#", "", $member->name());
 			$member_image = $member->image(600, 700);
 			$member_image_url = $member_image ? $member_image['url'] : "";
+
+			$member_image_two = $member->image_two(600, 700);
+			$member_image_url_two = $member_image_two ? $member_image_two['url'] : "";
+
 			$member_name = $member->name();
 			$member_email = $member->email();
 			$member_phone = $member->phone();
@@ -68,6 +72,10 @@ $team_total = $team_query->post_count;
 
 				<div class="team__popup__img">
 					<img src="<?php echo $member_image_url ?>" alt="<?php echo $member_name; ?>" />
+
+					<?php if($member_image_url_two): ?>
+						<img src="<?php echo $member_image_url_two ?>" alt="<?php echo $member_name; ?>" class="secondary-image" />
+					<?php endif; ?>
 				</div>
 
 				<div class="team__popup__content">
@@ -97,6 +105,7 @@ $team_total = $team_query->post_count;
 					<?php endif; ?>
 
 					<?php echo $member->bio(); ?>
+
 				</div>
 			</div>
 		<?php $i++;
