@@ -71,11 +71,11 @@ $team_total = $team_query->post_count;
 			<div id="<?php echo $member_id; ?>" class="team__popup">
 
 				<div class="team__popup__img">
-					<img src="<?php echo $member_image_url ?>" alt="<?php echo $member_name; ?>" />
+					<img src="<?php echo $member_image_url_two ?>" alt="<?php echo $member_name; ?>" />
 
-					<?php if($member_image_url_two): ?>
-						<img src="<?php echo $member_image_url_two ?>" alt="<?php echo $member_name; ?>" class="secondary-image" />
-					<?php endif; ?>
+					<?php //if($member_image_url_two): ?>
+						<!-- <img src="<?php echo $member_image_url_two ?>" alt="<?php echo $member_name; ?>" class="secondary-image" /> -->
+					<?php //endif; ?>
 				</div>
 
 				<div class="team__popup__content">

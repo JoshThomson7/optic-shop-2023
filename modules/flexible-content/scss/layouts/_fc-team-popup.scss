@@ -125,7 +125,6 @@ Team Pop-up
 		h3 {
 			font-size: var(--fl1-font-xxl);
 			color: var(--fl1-primary);
-			font-weight: 600;
 			margin-bottom: var(--fl1-spacing-sm);
 			span {
 				display: block;
@@ -133,6 +132,7 @@ Team Pop-up
 				color: var(--fl1-text);
 				padding-top: 10px;
 				text-transform: none;
+				color: $tiffany;
 			}
 		}
 
@@ -160,7 +160,7 @@ Team Pop-up
 			}
 
 			strong { 
-				font-weight: 600;
+				color: $secondary;
 			}
 
 			a { 
