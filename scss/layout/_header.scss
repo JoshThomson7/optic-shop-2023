@@ -43,10 +43,12 @@ header.header {
             justify-content: space-between;
             flex-wrap: wrap;
             align-items: center;
+
+            @include breakpoint(765px){justify-content: center;}
         }
 
         &--left {
-            
+            @include breakpoint(765px){display: none;}
         }
 
         &--centre {
@@ -90,16 +92,20 @@ header.header {
         }
 
         &--right {
+            @include breakpoint(765px){display: none;}
 
+            .social-nav{
+                left: 60px;
+            }
         }
 
         .social-nav-top{
             text-align: center; width: 150px; font-family: $mediumFont; display: flex; flex-direction: column; align-items: center; padding: 10px 20px; background: $secondary; color: #fff; transition: .3s ease all; position: relative; top: 25px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
             &:hover{transform: scale(1.05);}
 
-            &.left{right: 30px;}
+            &.left{right: 0px;}
 
-            &.right{left: -30px;}
+            &.right{left: 0px;}
         }
 
         .social-nav { 
