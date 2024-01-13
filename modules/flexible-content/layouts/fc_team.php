@@ -9,7 +9,7 @@ $args = array(
 	'post_type'         => 'team',
 	'post_status'       => 'publish',
 	'orderby'           => 'menu_order',
-	'order'             => 'asc',
+	'order'             => 'desc',
 	'posts_per_page'    => -1,
 	'fields'			=> 'ids',
 );

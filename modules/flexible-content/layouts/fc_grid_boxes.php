@@ -69,6 +69,7 @@ if(!empty($grid_boxes) && is_array($grid_boxes)):
         ?>
             <article class="<?php echo join(' ', $grid_box_classes); ?>"<?php echo $grid_boxes_spacing; ?>>
                 <div class="padder">
+                    <?php echo $overlay_link_open; ?>
                     <?php
                         if($image_id):
                         $image = vt_resize($image_id,'' , 700, 500, !$image_no_crop);
@@ -90,6 +91,7 @@ if(!empty($grid_boxes) && is_array($grid_boxes)):
                             <a href="<?php echo $button_url; ?>" class="link animate-icon"<?php echo $target; ?>><?php echo $button_label; ?> <i class="fa fa-chevron-right"></i></a>
                         <?php endif; ?>
                     </div><!-- grid__box__content -->
+                    <?php echo $overlay_link_close; ?>
                 </div><!-- padder -->
             </article>
         <?php endforeach; ?>

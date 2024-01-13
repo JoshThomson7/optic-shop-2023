@@ -52,13 +52,13 @@ Icon Grid
 
             .icon-grid__icon { max-width: 150px; display: flex; margin-bottom: 20px;
                 span { font-size: 41px; color: var(--fl1-primary); min-height: 80px; display: flex; justify-content: center; align-items: center; overflow: hidden;
-					img { height: 64px;}
+					img { height: 84px;}
 				}
             }
 
             .icon-grid__content {
 
-                h4 { font-size: 16px; color: var(--fl1-text); line-height: 22px; font-weight: 600;}
+                h4 { font-size: 26px; color: $secondary; line-height: 32px; font-weight: 600;}
                 p { font-size: 14px; line-height: 23px; color: var(--fl1-text-light);
                     &:last-of-type { margin-bottom: 0;}
                 }

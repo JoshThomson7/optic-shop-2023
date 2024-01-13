@@ -173,8 +173,8 @@
   }
 
   .contact-postcard{
-    width: 60%; display: flex; padding: 40px; justify-content: space-around;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://optic-shop.twsbeta3.co.uk/wp-content/uploads/2023/07/optic-shop-scaled-e1690542163115-2000x600.jpeg); 
+    width: 60%; display: flex; padding: 40px; justify-content: space-around; align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(https://optic-shop.twsbeta3.co.uk/wp-content/uploads/2024/01/TheOpticShop002-min-scaled.jpg); 
     background-size: cover; background-position: center; color: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
     @include breakpoint(850px){width: 100%;}
 
