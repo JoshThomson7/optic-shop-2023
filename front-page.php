@@ -19,9 +19,9 @@ FC_Helpers::flexible_content(); ?>
                     <h3>Contact Us</h3>
 
                     <ul>
-                        <li><a href="https://www.google.com/maps/place/The+Optic+Shop/@51.8219227,-3.021978,17z/data=!3m1!4b1!4m6!3m5!1s0x4871d0a5a10b1ced:0xa682e5b6ecf6458f!8m2!3d51.8219194!4d-3.0193977!16s%2Fg%2F1tx4ntgb?entry=ttu" target="_blank">The Optic Shop,<br>St John’s St, Abergavenny,<br>Monmouthsire, NP7 5RT</a></li>
+                        <li><a href="https://www.google.com/maps/place/The+Optic+Shop/@51.8219227,-3.021978,17z/data=!3m1!4b1!4m6!3m5!1s0x4871d0a5a10b1ced:0xa682e5b6ecf6458f!8m2!3d51.8219194!4d-3.0193977!16s%2Fg%2F1tx4ntgb?entry=ttu" target="_blank">The Optic Shop,<br>11 St John’s St, Abergavenny,<br>Monmouthsire, NP7 5RT</a></li>
                         <li><a href="tel:01873855664" target="_blank"><i class="fa fa-phone"></i> 01873 855664</a></li>
-                        <li><a href="mailto:info@opticshop-aber.co.uk" target="_blank"><i class="fa fa-envelope"></i> info@opticshop-aber.co.uk</a></li>
+                        <li><a href="mailto:osa.enquiries@gmail.com" target="_blank"><i class="fa fa-envelope"></i> osa.enquiries@gmail.com</a></li>
                     </ul>
                 </div>
 

@@ -1,6 +1,6 @@
 <div class="book-apt-footer">
     <div class="max__width">
-        <a href="mailto:info@opticshop-aber.co.uk" target="_blank">Book an Appointment</a>
+        <a href="mailto:osa.enquiries@gmail.com" target="_blank">Book an Appointment</a>
     </div>
 </div>
 
