@@ -183,6 +183,9 @@ $fc_bk_colour in $fc_bk_colours {
                 p {
                     color: $offWhite!important;
                 }
+                a{
+                    color: $tertiary;
+                }
 
                 .fc-squares {
                     svg {
