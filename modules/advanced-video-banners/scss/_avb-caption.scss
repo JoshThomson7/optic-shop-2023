@@ -17,6 +17,10 @@
 		}
 	}
 
+	@include breakpoint(640px){
+		padding-left: 0;
+	}
+
 	.avb-banner__caption-wrap {
 		display: flex;
 		flex-direction: column;
@@ -36,7 +40,11 @@
 			width: 100%;
 		}
 
-		img{width: 200px; margin: 0 auto;}
+		img{width: 200px; margin: 0 auto;
+			@include breakpoint(405px){
+				width: 140px; margin: 20px auto;
+			}
+		}
 
 		figure {
 			img {
@@ -69,10 +77,20 @@
 		text-align: center;
 		color: $white;
 		line-height: 28px;
+		@include breakpoint(405px){
+			font-size: 32px; line-height: 40px;
+		}
 
 		.small{font-size: 22px;}
 
-		.custom{font-size: 50px; font-family: $boldFont; text-transform: uppercase; line-height: 100px;}
+		.custom{font-size: 50px; font-family: $boldFont; text-transform: uppercase; line-height: 100px;
+			@include breakpoint(500px){
+				font-size: 40px; line-height: 70px;
+			}
+			@include breakpoint(405px){
+				font-size: 32px; line-height: 40px;
+			}	
+		}
 
 		.custom-two{letter-spacing: 8px; line-height: 20px;}
 

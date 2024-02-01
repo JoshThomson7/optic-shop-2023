@@ -55,7 +55,9 @@ header.header {
 
             a{ display: flex; flex-direction: column; align-items: center;
 
-                h2{color: $offWhite; font-size: 44px; margin-bottom: 10px;}
+                h2{color: $offWhite; font-size: 44px; margin-bottom: 10px; text-align: center;
+                    @include breakpoint(640px){font-size: 34px;}
+                }
 
                 .line{height: 2px; width: 100%; background: $tiffany;}
 

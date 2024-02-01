@@ -56,6 +56,13 @@ class FL1C_CPT {
                 'menu_slug'   => 'edit.php?post_type=team',
                 'function'    => null,
             ),
+            array(
+                'page_title'  => 'Testimonials',
+                'menu_title'  => 'Testimonials',
+                'capability'  => 'edit_posts',
+                'menu_slug'   => 'edit.php?post_type=testimonial',
+                'function'    => null,
+            )
         );
 
         foreach ( $submenu_pages as $submenu ) {
@@ -165,6 +172,68 @@ class FL1C_CPT {
 
 			echo join('<br />', $contact);
 		});
+
+    }
+
+    /**
+     * Testimonials CPT
+     */
+    private function register_testimonial_cpt() {
+
+        // CPT
+        $cpt = new FL1_CPT(
+            array(
+                'post_type_name' => 'testimonial',
+                'plural' => 'Testimonials',
+                'menu_name' => 'Testimonials'
+            ),
+            array(
+                'menu_position' => 21,
+                'rewrite' => array( 'slug' => 'testimonial', 'with_front' => false ),
+                'publicly_queryable' => false,
+                'generator' => FL1C_SLUG
+            )
+        );
+
+		// Taxonomies
+        $cpt->register_taxonomy(
+            array(
+                'taxonomy_name' => 'testimonial_category',
+                'slug' => 'testimonial_category',
+                'singular' => 'Testimonial Category',
+                'plural' => 'Testimonial Categories',
+				'public' => false,
+				'query_var' => false,
+				'rewrite' => false,
+				'publicly_queryable' => false
+            )
+        );
+
+        $cpt->columns(array(
+            'cb' => '<input type="checkbox" />',
+            //'rating' => __('Rating'),
+            'title' => __('Name'),
+            'quote' => __('Quote'),
+            'testimonial_category' => __('Categories'),
+        ));
+
+        $cpt->populate_column('rating', function($column, $post) {
+
+            $post_id = $post->ID;
+            $testimonial = new FL1C_Testimonial($post_id);
+            
+            $testimonial->rating_display();
+        
+        });
+
+        $cpt->populate_column('quote', function($column, $post) {
+
+            $post_id = $post->ID;
+            $testimonial = new FL1C_Testimonial($post_id);
+            
+            echo $testimonial->quote(30);
+        
+        });
 
     }
 

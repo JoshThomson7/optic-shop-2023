@@ -40,6 +40,10 @@ Accordion
 			// border: 1px solid $lightgrey;
 			box-shadow: 0 1px 4px rgba(0,0,0, 0.5);
 
+			@include breakpoint(550px){
+				font-size: 18px;
+			}
+
 			i {
 				display: block;
 				color: var(--fl1-secondary);

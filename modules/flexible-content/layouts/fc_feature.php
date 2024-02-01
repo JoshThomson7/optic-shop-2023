@@ -69,33 +69,35 @@ $video_id = get_sub_field('feature_video_id');
         <?php if($heading): ?><h3><?php echo $heading; ?></h3><?php endif; ?>
         <?php echo $text ? $text : ''; ?>
 
-		<div class="feature__action">
-			<?php if($link_text && $link_url): ?>
-				<div class="feature__action-main<?php if(FC_Helpers::video_popup($link_url)) { echo ' video-pop'; } ?>">
-					<a href="<?php echo $link_url; ?>" class="button secondary small<?php if($dropdown): ?> has-dropdown<?php endif; ?>"<?php echo FL1_Helpers::link_target($link_url) ?>>
-						<span><?php echo $link_text; ?></span>
-					</a>
+		<?php if($link_text && $link_url): ?>
+			<div class="feature__action">
+				<?php if($link_text && $link_url): ?>
+					<div class="feature__action-main<?php if(FC_Helpers::video_popup($link_url)) { echo ' video-pop'; } ?>">
+						<a href="<?php echo $link_url; ?>" class="button secondary small<?php if($dropdown): ?> has-dropdown<?php endif; ?>"<?php echo FL1_Helpers::link_target($link_url) ?>>
+							<span><?php echo $link_text; ?></span>
+						</a>
 
-					<?php if($dropdown): ?>
-						<div class="feature__action-dropdown">
-							<?php while(have_rows('feature_dropdown_links')): ?>
-								<?php the_row(); ?>
-								<a href="<?php the_sub_field('url'); ?>" class="dropdown"<?php echo FL1_Helpers::link_target(get_sub_field('url')) ?>>
-									<span><?php the_sub_field('label'); ?></span>
-								</a>
-							<?php endwhile; ?>
-						</div>
-					<?php endif; ?>
-				</div>
-			<?php endif; ?>
+						<?php if($dropdown): ?>
+							<div class="feature__action-dropdown">
+								<?php while(have_rows('feature_dropdown_links')): ?>
+									<?php the_row(); ?>
+									<a href="<?php the_sub_field('url'); ?>" class="dropdown"<?php echo FL1_Helpers::link_target(get_sub_field('url')) ?>>
+										<span><?php the_sub_field('label'); ?></span>
+									</a>
+								<?php endwhile; ?>
+							</div>
+						<?php endif; ?>
+					</div>
+				<?php endif; ?>
 
-			<?php if($link_text_2 && $link_url_2): ?>
-				<span <?php if(FC_Helpers::video_popup($link_url_2)) { echo 'class="video-pop"'; } ?>>
-					<a href="<?php echo $link_url_2; ?>" class="link"<?php echo FL1_Helpers::link_target($link_url_2) ?>>
-						<span><?php echo $link_text_2; ?></span>
-					</a>
-				</span>
-			<?php endif; ?>
-		</div><!-- feature__action -->
+				<?php if($link_text_2 && $link_url_2): ?>
+					<span <?php if(FC_Helpers::video_popup($link_url_2)) { echo 'class="video-pop"'; } ?>>
+						<a href="<?php echo $link_url_2; ?>" class="link"<?php echo FL1_Helpers::link_target($link_url_2) ?>>
+							<span><?php echo $link_text_2; ?></span>
+						</a>
+					</span>
+				<?php endif; ?>
+			</div><!-- feature__action -->
+		<?php endif; ?>
     </div><!-- feature__text -->
 </div><!-- fc_feature_wrapper -->

@@ -9,6 +9,7 @@
 
 		.avb-banner__caption {
 			padding: var(--fl1-spacing-xl) 0 var(--fl1-spacing-xl);
+			@include breakpoint(550px){padding: 10px 0;}
 
 			.max__width{
 				display: flex; justify-content: center;
@@ -17,7 +18,9 @@
 					padding: 0;
 					width: 100%;
 
-					h1{font-size: 2rem; line-height: 60px;}
+					h1{font-size: 2rem; line-height: 60px;
+						@include breakpoint(550px){font-size: 1.5rem; line-height: 50px;}
+					}
 				}
 			}
 		}

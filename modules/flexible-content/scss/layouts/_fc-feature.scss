@@ -35,13 +35,7 @@ Feature
 			}
 
 			@include breakpoint(brotherbear) {
-				width: 100% !important;
-			}
-
-
-			@include breakpoint(brotherbear) {
-				width: 100%;
-				border-left: none;
+				width: 100% !important; border-left: none;
 			}
 
 			img{width: auto;}
@@ -50,6 +44,10 @@ Feature
 				font-size: var(--fl1-font-xl);
 				line-height: 1.4;
 				color: var(--fl1-primary);
+
+				@include breakpoint(550px){
+					font-size: 24px;
+				}
 			}
 
 			h5 {
@@ -65,6 +63,10 @@ Feature
 				font-size: var(--fl1-font-sm);
 				line-height: 28px;
 				color: var(--fl1-text);
+
+				@include breakpoint(550px){
+					font-size: 18px; line-height: 26px;
+				}
 
 				&:last-child {
 					margin-bottom: 0;
@@ -210,11 +212,7 @@ Feature
 				padding-right: calc((100vw - 1172px) / 2);
 
 				@include breakpoint(grandpabear) {
-					padding: var(--fl1-spacing-xxxl);
-				}
-
-				@include breakpoint(mamabear) {
-					padding: var(--fl1-spacing-lg);
+					padding: 20px 0;
 				}
 			}
 
@@ -233,11 +231,7 @@ Feature
 				padding-left: calc((100vw - 1172px) / 2);
 
 				@include breakpoint(grandpabear) {
-					padding: var(--fl1-spacing-xxxl);
-				}
-
-				@include breakpoint(mamabear) {
-					padding: var(--fl1-spacing-lg);
+					padding: 20px 0;
 				}
 			}
 
@@ -282,6 +276,10 @@ Feature
 
 			.feature__text {
 				border-left: 40px solid transparent;
+
+				@include breakpoint(brotherbear) {
+					border-left: none;
+				}
 			}
 
 			&.right {
@@ -306,7 +304,7 @@ Feature
 					@include breakpoint(brotherbear) {
 						width: 100%;
 						order: 0;
-						border-left: none;
+						border-left: 1px solid transparent;
 					}
 				}
 			}
