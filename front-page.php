@@ -4,7 +4,7 @@ get_header();
 AVB::avb_banners();
 FC_Helpers::flexible_content(); ?>
 
-<div class="custom-contact">
+<div id="contact-info" class="custom-contact">
     <div class="max__width">
         <div class="cc-container">
             <div class="animation-box">

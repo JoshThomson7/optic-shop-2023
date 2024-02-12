@@ -263,3 +263,17 @@
     }
   }
 }
+
+#contactinfo_section{
+  display: none;
+
+  @include breakpoint(765px) {
+    display: block;
+  }
+
+  p{margin: 0;}
+}
+
+html{
+  scroll-behavior: smooth;
+}

@@ -5,7 +5,7 @@
 	padding: 0 0 0 2rem;
 
 	@include breakpoint(mamabear) {
-		display: none;
+		width: 100%; padding: 0;
 	}
 	
 	.avb-banner__medium { 
@@ -20,6 +20,10 @@
 			background-position: center;
 			transition:all .8s ease;
 			min-height: 600px;
+
+			@include breakpoint(mamabear) {
+				min-height: 300px;
+			}
 
 			img {
 				opacity: 0;
