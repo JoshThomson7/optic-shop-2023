@@ -34,11 +34,11 @@
                 <div class="max__width">
 
                     <div class="header__main--left">
-                        <a href="#" class="social-nav-top left lens-order">
+                        <a href="#contact-info" class="social-nav-top left lens-order">
                             <span>Contact Lens<br>Reorder</span>
                         </a>
 
-                        <a href="mailto:osa.enquires@gmail.com" class="social-nav">
+                        <a target="_blank" href="mailto:osa.enquires@gmail.com" class="social-nav">
                             <i class="fal fa-envelope"></i>
                             <span>Email</span>
                         </a>
@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="header__main--right">
-                        <a href="#" class="social-nav-top right open-times">
+                        <a target="_blank" href="#contact-info" class="social-nav-top right open-times">
                             <span>Are we<br>open?</span>
                         </a>
 
