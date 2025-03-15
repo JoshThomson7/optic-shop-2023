@@ -41,7 +41,7 @@ if(!empty($banners)):
 							<?php if($banner->headingTop()): ?><?php echo $banner->headingTop(); ?><?php endif; ?>
 							<?php if($banner->heading()): ?><?php echo $banner->heading(); ?><?php endif; ?>
 							<?php if($banner->caption()): ?><p><?php echo $banner->caption(); ?></p><?php endif; ?>
-                            <img src="https://optic-shop.twsbeta3.co.uk/wp-content/uploads/2023/12/IMG_2187.jpg" alt="Optic Shop Glasses">
+                            <img src="http://opticshop-aber.co.uk/wp-content/uploads/2023/12/IMG_2187.jpg" alt="Optic Shop Glasses">
 
 							<?php if($banner->button_label()): ?>
 								<div class="avb-banner__caption-actions">
